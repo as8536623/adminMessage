@@ -1,0 +1,82 @@
+.paper__container{
+    .paper__time{
+        padding: 0 20px;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        background: rgb(239, 243, 247);
+        border-bottom: 1px solid $borderColor;
+        box-sizing: border-box;
+    }
+    .label__icon{
+        width: 30px;
+        height: 31px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-image: url("./images/label.png");
+        background-image: image-set(url('./images/label.png') 1x, url("./images/label@2x.png") 2x);
+        background-image: -wekbit-image-set(url('./images/label.png') 1x, url("./images/label@2x.png") 2x);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .paper__name{
+        width: 280px;
+        font-size: 14px;
+        color: $textSub;
+        letter-spacing: 0.31px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .paper__info{
+        padding: 0 20px;
+        box-sizing: border-box;
+        height: 115px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #F8F8F8;
+        border-bottom: 1px solid $borderColor;
+    }
+    .paper__desc{
+        flex: 1;
+    }
+    .paper__label{
+        display: inline-block;
+        width: 72px;
+        text-align: right;
+        font-size: 14px;
+        color: $textSub;
+        letter-spacing: 0.31px;
+    }
+    .paper__item{
+        line-height: 30px;
+    }
+    .paper__question__item{
+        border-bottom: 1px solid $borderColor;
+        padding: 20px 20px 10px;
+        box-sizing: border-box;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    .question__title{
+        font-size: 14px;
+        color: $textPrimary;
+        letter-spacing: 0.31px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .question__type{
+        background: $btnPrimary;
+        border-radius: 2px;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 10px;
+        font-size: 14px;
+        color: $white;
+        margin-bottom: 10px;
+        display: table;
+    }
+}

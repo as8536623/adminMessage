@@ -1,0 +1,105 @@
+$blue: #324157;
+$light-blue: #3A71A8;
+$red: #C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #D5F0F0;
+$yellow: #FEC171;
+$panGreen: #30B08F;
+$bg: #ECECEC;
+$transparent: transparent;
+$white: #FFFFFF;
+$normalBgColor: #F7F7F7;
+$error: #FF6600;
+
+// button
+$primary: #25B864;
+$assistant: #46BEC4;
+$btnPrimary: #25B864;
+$btnPrimaryHover: #47C47A;
+$btnPrimaryActive: #16914F;
+$btnDefaultText: #333333;
+$btnDefaultBorder: #DDDDDD;
+$btnDefaultBg: #FFFFFF;
+$btnDefaultHoverText: #25B864;
+$btnDefaultHoverBorder: #25B864;
+$btnDefaultHoverBg: #ffffff;
+$btnDefaultActiveText: #16914F;
+$btnDefaultActiveBorder: #16914F;
+$btnDefaultActiveBg: #ffffff;
+$btnDisabledActiveText: #CCCCCC;
+$btnDisabledActiveBorder: #D9D9D9;
+$btnDisabledActiveBg: #F7F7F7;
+$btnRadius: 2px;
+$btnMinWidth: 76px;
+$btnTextMinWidth: 20px;
+
+$searchBtnColor: #BBBBBB;
+
+//sidebar
+$menuBg: #20222A;
+$subMenuBg: #1F2327;
+$menuHover: #46BEC4;
+$menuHoverText: #25B864;
+$menuActive: #E9FBFC;
+$menuActiveText: #25B864;
+
+// table
+$tableHead: #F7F7F7;
+$tableGreen: #F4F9F9;
+$tableHover: #E0F2F2;
+
+//text
+$textPrimary: #333333;
+$textSub: #666666;
+$textTips: #999999;
+
+// border
+$borderColor: #F0F0F0;
+$qrBorderColor: #CCCCCC;
+// tree
+$treeArrowColor: #595959;
+$treeItemHeight: 32px;
+
+$tagBg: rgba(37,184,100,.1);
+$tagBorder: rgba(37,184,100,.2);
+$tipColor: #8E8E8F;
+
+$interBg: #F9F9F9;
+
+//rank
+$rankFirst: #E42A18;
+$rankSecond: #FF7000;
+$rankThird: #FEB900;
+$rankDefault: #B5B5B5;
+$rankBtn: #0098FF;
+
+// system btn
+$systemBtnColor: #5399FF;
+$systemCheckboxColor: #FF7739;
+
+// review
+$defaultCircleBtn: #D8D8D8;
+$finishCircleBtn: #DE6E4B;
+$defaultJoinText: #B3B3B3;
+$defaultJoinBg: #F4F4F4;
+$JoinActiveBg: #E6F8ED;
+$defaultStatusBg: #D3D3D3;
+$ingStatusBg: #FEB24D;
+$noStartStatusBg: #42B3FF;
+
+// exam
+$examAnswerBg: #f4f7fd;
+$examTextActive: #fc984e;
+$examActiveBg: #fc984e;
+
+// exam
+$examRightBg: #e6f8e4;
+$examRightBorder: #9de08b;
+$examRightText: #3ab32e;
+$examWrongBg: #ffe6e6;
+$examWrongBorder: #ffc7c7;
+$examWrongText: #fc4e51;
+$examEmptyBorder: #cbcbcb;
+
+@import "./variables-bgk";

@@ -1,0 +1,65 @@
+.exam__analyze {
+    padding: 20px;
+
+    .exam__title {
+        text-align: center;
+    }
+
+    .preview__header,
+    .preview__content {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #E7E7E7;
+    }
+
+    .preview__header {
+        border-bottom: none;
+    }
+
+    .exam__analyze__preview {
+        width: 999px;
+        margin: 0 auto;
+    }
+
+    .preview__header__item {
+        background-color: #F9F9F9;
+        width: 111px;
+        height: 54px;
+        text-align: center;
+        line-height: 54px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $textSub;
+
+        &.border--right {
+            border-right: 1px solid #E7E7E7;
+        }
+    }
+
+    .preview__content__item {
+        width: 111px;
+        height: 54px;
+        text-align: center;
+        line-height: 54px;
+        font-size: 14px;
+        color: $textSub;
+
+        &.border--right {
+            border-right: 1px solid #E7E7E7;
+        }
+    }
+
+    .exam__analyze__pie,
+    .exam__analyze__line {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .batch__line {
+        margin-bottom: 10px;
+    }
+
+    .analyze__sec {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "webJsMap": {
+        "dev": "3380d8cf3becbebb0c4a1a73059f007d",
+        "test": "3380d8cf3becbebb0c4a1a73059f007d",
+        "server168": "3380d8cf3becbebb0c4a1a73059f007d",
+        "serverProd": "3380d8cf3becbebb0c4a1a73059f007d"
+    },
+    "webServiceMap": {
+        "dev": "281970d1488f4cb0adad725e94c69e50",
+        "test": "281970d1488f4cb0adad725e94c69e50",
+        "server168": "281970d1488f4cb0adad725e94c69e50",
+        "serverProd": "281970d1488f4cb0adad725e94c69e50"
+    },
+    "ssh": {
+        "server168": {
+            "host": "192.168.0.168",
+            "port": "22",
+            "username": "root",
+            "password": "root"
+        },
+        "test": {
+            "host": "192.168.0.218",
+            "port": "22",
+            "username": "root",
+            "password": "root"
+        },
+        "yufa": {
+            "host": "139.224.253.154",
+            "port": "22",
+            "username": "root",
+            "password": "qgAdmin!@34"
+        },
+        "prod": {
+            "host": "106.15.73.210",
+            "port": "22",
+            "username": "root",
+            "password": "qgAdmin!@34"
+        }
+    }
+}

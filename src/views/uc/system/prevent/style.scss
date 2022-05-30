@@ -1,0 +1,36 @@
+.prevent-content{
+    .el-input--small{
+        width: 70px !important;
+    }
+    .el-checkbox{
+        color: $textPrimary;
+    }
+    .el-radio__label{
+        color: $textSub !important;
+    }
+    .el__form-checkbox{
+        .el-checkbox{
+            color: $systemCheckboxColor;
+        }
+    }
+    .el__item-radio{
+        margin-bottom: 20px;
+    }
+    .el-textarea{
+        width: 1000px !important;
+        margin: 0!important;
+    }
+    .system__label{
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: $textPrimary;
+    }
+    .el__form-input .el-input--small{
+        width: 190px !important;
+    }
+    .el__form-checkbox .el-checkbox__input.is-checked + .el-checkbox__label{
+        color: $systemCheckboxColor;
+    }
+}

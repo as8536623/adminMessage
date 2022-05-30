@@ -1,0 +1,29 @@
+.arrange-item-content{
+    position: relative;
+    //background: #F8F8F8;
+    border: 1px solid $borderColor;
+    padding: 20px 20px 4px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    .arrange-del{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        display: none;
+    }
+    &:hover{
+        .arrange-del{
+            display: inline-block;
+        }
+    }
+    .el-tag{
+        margin: 5px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    .arrange__user{
+        @include font_primary();
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+.exam__content__block {
+    flex: 1;
+
+    .exam__file__item {
+        margin-bottom: 15px;
+        &.code {
+            max-width: 800px;
+        }
+        &.video{
+            max-width: 300px;
+        }
+    }
+
+    .exam__ct {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,111 @@
+.veln__file__video {
+    height: 440px;
+    padding: 10px 8px 0;
+    display: flex;
+    flex-direction: column;
+
+    .vfv__header__category {
+        width: 252px;
+    }
+
+    .search__input__wrapper {
+        width: 252px !important;
+    }
+
+    .vfv__header .vfs__search {
+        margin-left: 35px;
+    }
+
+    .vfv__container {
+        flex: 1;
+        overflow-y: auto;
+        margin-top: 11px;
+        padding: 6px 9px 1px;
+    }
+
+    .vfv__item {
+        width: 252px;
+        height: 211px;
+        border: 1px solid #F0F0F0;
+        border-radius: 2px;
+        box-sizing: border-box;
+        padding: 17px;
+        margin-right: 35px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all .3s ease;
+        position: relative;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 26px 40px -24px rgba(213, 219, 229, 1);
+        }
+
+        &.active {
+            border: 1px solid $primary;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 250px;
+                height: 209px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 1px solid $primary;
+            }
+        }
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    .vfv__item__main {
+        height: 128px;
+        position: relative;
+        margin-bottom: 10.3px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .vfv__item__bg {
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .vfv__item__info {
+        height: 24px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        color: #ffffff;
+        line-height: 24px;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .vfv__item__name {
+        height: 40px;
+        line-height: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .vfv__play__icon {
+        width: 44px;
+        height: 44px;
+        background: url('./images/play.png') transparent center center no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

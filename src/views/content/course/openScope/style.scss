@@ -1,0 +1,45 @@
+.form__page__btn {
+    margin-top: 40px;
+}
+
+.app-container-block {
+    padding: 0;
+
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+
+    .form__section__title {
+        background-color: #ffffff;
+        padding: 0 20px;
+        margin-bottom: 0 !important;
+    }
+
+    .course__exam__btns {
+        margin-bottom: 12px;
+    }
+}
+
+.form__section__container {
+    height: auto;
+}
+
+.chapter-container {
+    height: auto;
+}
+
+.course__setting__form {
+    .el-form-item__label {
+        padding-right: 20px;
+        text-align: right;
+    }
+
+    .course__exam__item {
+        margin-top: 20px;
+    }
+}
+
+.error__template__link {
+    padding: 20px;
+}

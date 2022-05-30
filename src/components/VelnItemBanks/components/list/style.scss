@@ -1,0 +1,68 @@
+.veln__item__bank__list{
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .veln__item__bank__item{
+        cursor: pointer;
+        width: 300px;
+        height: 120px;
+        border: 1px solid $borderColor;
+        margin: 0 15px 15px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: all .3s ease;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        &:hover,&:focus{
+            transform: translateY(-6px);
+            box-shadow: 0 26px 40px -24px #d5dbe5;
+        }
+        &.active{
+            @include border_primary();
+        }
+    }
+    .item__info{
+        min-height: 40px;
+        border-bottom: 1px dashed $borderColor;
+    }
+    .item__bankName{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: $textSub;
+    }
+    .item__desc{
+        display: flex;
+        flex-direction: row;
+        color: $textSub;
+        align-items: center;
+    }
+    .el-button.el-button--text{
+        @include font_primary();
+    }
+    .item__total{
+        flex: 1;
+    }
+    .item__option__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 4px 0;
+    }
+    .option__item{
+        min-width: 90px;
+        color: $textTips;
+        line-height: 25px;
+    }
+}
+.veln__item__bank--empty {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 6px;
+    text-align: center;
+    color: $textTips;
+    margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+.inner-buy {
+    .inner-buy__page {
+        text-align: center;
+    }
+
+    .inner-buy__default {
+        text-align: center;
+        color: $textTips;
+        flex: 1;
+        margin: 20px 0;
+    }
+}
+
+.inner-buy__content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .course-item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}

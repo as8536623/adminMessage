@@ -1,0 +1,73 @@
+.role__user {
+    padding: 20px;
+
+    .el-tree-node__content {
+        .el-button.add__role__btn {
+            display: inline-block;
+        }
+
+        &:hover {
+            .delete__role__btn {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.role__header {
+    margin-bottom: 20px;
+}
+
+.role__header {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.role__name {
+    font-size: 16px;
+}
+
+.auth__opt {
+    margin-left: 20px;
+}
+
+.role__name__edit {
+    color: #666666;
+}
+
+.delete__role__btn {
+    color: $textSub;
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 7px;
+}
+
+.add__role__btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 10;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+}
+
+.role__icon {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    color: #666666;
+
+    &:hover {
+        @include font_primary();
+    }
+}
+
+.role__view__auth {
+    margin-left: 10px;
+    font-size: 12px;
+    @include font_primary();
+}

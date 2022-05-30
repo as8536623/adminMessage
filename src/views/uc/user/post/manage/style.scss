@@ -1,0 +1,68 @@
+.post__block {
+    .role__header {
+        margin-bottom: 20px;
+    }
+
+    .role__name,
+    .auth__opt {
+        display: inline-block;
+    }
+
+    .auth__opt {
+        margin-left: 20px;
+    }
+
+    .role__name__edit {
+        color: #666666;
+    }
+
+    .add__role__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .category__link {
+        width: 180px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        position: absolute;
+        bottom: 20px;
+        background-color: $textSub;
+        color: #ffffff;
+        border-radius: 2px;
+        cursor: pointer;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .category__icon {
+        position: absolute;
+        top: 73px;
+        right: 12px;
+        cursor: pointer;
+        @include font_primary();
+    }
+
+    .category__icon__svg {
+        padding: 4px;
+        font-size: 22px;
+        @include bg_primary();
+        color: $white;
+        border-radius: 2px;
+    }
+
+    .post__category {
+        .qgu__tree .include__child {
+            right: 45px;
+        }
+    }
+
+    .person__filter {
+        .el-form-item--small.el-form-item {
+            margin-bottom: 12px;
+        }
+    }
+}

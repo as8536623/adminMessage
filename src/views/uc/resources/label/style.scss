@@ -1,0 +1,115 @@
+.label-container {
+    .el-tabs__nav-scroll {
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .label-form {
+        margin: 20px 0;
+    }
+
+    .el-form-item--small.el-form-item {
+        margin-bottom: 0;
+    }
+
+    .el-form--inline .el-form-item {
+        margin-right: 0;
+    }
+
+    .el-select--mini .el-input--mini .el-input__inner {
+        height: 30px;
+        background: #FAFAFA;
+        border: 1px solid $btnDefaultBorder;
+        border-radius: 100px;
+    }
+
+    .el-form-item--small .el-form-item__content, .el-form-item--small .el-form-item__label {
+        line-height: 30px;
+    }
+
+    .el-select {
+        margin-left: 15px;
+    }
+}
+
+.label__dialog {
+    .tip__icon {
+        color: $tipColor;
+        width: 14px;
+        height: 14px;
+    }
+
+    .el-form-item__label {
+        text-align: right;
+    }
+
+    .el-input--small {
+        width: 354px;
+    }
+
+    .el-checkbox {
+        margin-right: 26px;
+    }
+
+    .el-select .el-tag__close.el-icon-close {
+        right: -3px;
+        top: -1px;
+    }
+
+    .tag__list {
+        width: 354px;
+        border: 1px solid #DCDFE6;
+        min-height: 32px;
+        padding: 1px 5px;
+        line-height: 24px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .el-button.el-button--small {
+            padding: 2px 10px;
+            margin: 2px;
+            border-radius: 2px;
+            box-sizing: border-box;
+            font-size: 13px;
+
+            span {
+                height: 18px;
+                line-height: 18px;
+                display: inline-block;
+            }
+        }
+
+        .el-tag {
+            font-size: 13px;
+            margin: 2px;
+            background: $tagBg;
+            border-radius: 2px;
+            color: $primary;
+
+            .el-tag__close {
+                top: 0;
+                color: $white;
+            }
+        }
+
+        .el-tag--small {
+            line-height: 24px;
+        }
+
+        .input-new-tag {
+            width: 100px;
+
+            .el-input__inner {
+                height: 24px;
+            }
+        }
+    }
+
+    .label__desc {
+        font-size: 12px;
+        color: $textTips;
+    }
+}

@@ -1,0 +1,53 @@
+.person__excel__info {
+    margin-bottom: 10px;
+    width: 99%;
+    font-size: 12px;
+}
+
+.person__excel__link {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 10px;
+    vertical-align: 0;
+}
+
+.error__template__link {
+    padding: 20px;
+    font-size: 0;
+
+    .error__template__label {
+        font-size: 14px;
+        vertical-align: middle;
+    }
+
+    .error__template__btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.person__filter {
+    .el-form-item--small.el-form-item {
+        margin-bottom: 8px;
+    }
+}
+
+.outer__user__wrapper {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+    @include bg_primary();
+    border-radius: 32px;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.outer__user__add {
+    color: $white;
+    margin-top: 8px;
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+.veln__org__select--current {
+    width: 939px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+
+    .dgp--left {
+        width: 280px;
+        height: 100%;
+        border-right: 1px solid $borderColor;
+    }
+
+    .dgp--right {
+        flex: 1;
+    }
+
+    .dgp__search__wrapper {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 27px;
+        border-bottom: 1px solid $borderColor;
+        overflow: hidden;
+    }
+
+    .dgp__search__icon {
+        font-size: 16px;
+        color: $searchBtnColor;
+        margin-right: 10px;
+    }
+
+    .dgp__search__npt {
+        width: 222px;
+
+        .el-input__inner {
+            height: 40px;
+            border: none;
+            padding: 0;
+            font-size: 14px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .dgp__type__ul {
+        font-size: 0;
+        height: 54px;
+        padding: 14px 30px;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            font-size: 14px;
+            height: 26px;
+            line-height: 26px;
+            width: auto;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: all .15s;
+
+            &:hover {
+                @include font_primary();
+            }
+
+            &.active {
+                @include font_primary();
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    border-radius: 2px;
+                    @include bg_primary();
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .dgp__tree {
+        padding: 20px;
+        height: 510px;
+        overflow-y: auto;
+    }
+
+    .dgp--right {
+        padding: 40px 20px 17px;
+    }
+
+    .btn__wrapper {
+        padding-right: 30px;
+        margin-top: 20px;
+        text-align: right;
+    }
+}

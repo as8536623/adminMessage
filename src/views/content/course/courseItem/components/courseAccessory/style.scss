@@ -1,0 +1,119 @@
+.course__accessory {
+    .course__paragraph__file {
+        width: 300px;
+        height: 80px;
+        border: 1px solid $borderColor;
+        border-radius: 2px;
+        padding: 14px 16px 14px 25px;
+    }
+
+    .course__file__icon {
+        float: left;
+        width: 30px;
+        height: 35px;
+        margin-right: 28px;
+        background-image: url('../../images/icons.png');
+        background-image: -webkit-image-set(url('../../images/icons.png') 1x, url('../../images/icons@2x.png') 2x, url('../../images/icons@3x.png') 3x);
+        background-size: 125px;
+        background-repeat: no-repeat;
+        margin-top: 7.5px;
+
+        &[data-type="video"] {
+            background-position: -63px -36px;
+        }
+
+        &[data-type="audio"] {
+            background-position: 0 0;
+        }
+
+        &[data-type="documents"],
+        &[data-type="word"],
+        &[data-type="doc"],
+        &[data-type="docx"] {
+            background-position: -63px 0;
+        }
+
+        &[data-type="excel"] {
+            background-position: -32px -36px;
+        }
+
+        &[data-type="ppt"],
+        &[data-type="pptx"] {
+            background-position: -95px 0;
+        }
+
+        &[data-type="pdf"] {
+            background-position: 0 -36px;
+        }
+
+        &[data-type="unknown"],
+        &[data-type="uknown"] {
+            background-position: -32px 0;
+        }
+    }
+
+    .course__file__name {
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 8px;
+    }
+
+    .course__file__created {
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: $textTips;
+    }
+
+    .course__file__bottom {
+        .course__file__del,
+        .course__file__preview,
+        .course__file__tape {
+            padding: 0;
+            line-height: 20px;
+            color: $textSub;
+
+            &:hover {
+                opacity: .75;
+            }
+        }
+    }
+
+    .course__file__preview {
+        @include font_primary();
+        margin-right: 10px;
+    }
+
+    .course__file__bottom {
+        height: 20px;
+        line-height: 20px;
+        margin-top: 4px;
+        color: $textTips;
+    }
+
+    .course__paragraph--empty {
+        width: 300px;
+        height: 80px;
+        border: 1px solid $borderColor;
+        border-radius: 2px;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .course__paragraph--empty__icon {
+        font-size: 20px;
+        color: $textSub;
+        margin-bottom: 0;
+    }
+
+    .course__paragraph--empty__text {
+        font-size: 14px;
+        line-height: 14px;
+        color: $textSub;
+    }
+}

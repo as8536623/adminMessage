@@ -1,0 +1,64 @@
+.random__wrapper{
+    .tag__list{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .el-tag{
+        margin: 5px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    .random__item__bank{
+        min-height: 50px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-bottom: 1px solid $borderColor;
+        label{
+            font-weight: 500;
+            display: inline-block;
+            width: 80px;
+        }
+    }
+    .el-form-item.is-required .el-form-item__label:before{
+        content: '';
+    }
+    .random__select__item{
+        margin: 5px 0 10px 0;
+    }
+}
+.random__content{
+    padding: 10px 20px;
+    .random__title{
+        font-size: 14px;
+        color: $textPrimary;
+        line-height: 20px;
+        display: inline-block;
+    }
+    .el-form .el-input--small{
+        width: 114px;
+    }
+    .question__type__item{
+        font-size: 14px;
+        color: $textPrimary;
+        .el-input-number--small{
+            width: 80px;
+        }
+        .el-form-item__label{
+            text-align: right;
+        }
+        .el-input--small{
+            width: 70px;
+        }
+    }
+    label{
+        font-weight: 500;
+    }
+    .item__bank__name{
+        margin-bottom: 14px;
+    }
+    .sr__detail .el-form-item{
+        display: inline-block;
+        width: 200px;
+    }
+}

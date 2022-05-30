@@ -1,0 +1,29 @@
+.examination-container{
+    padding: 0 20px 20px;
+
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+    .tool-custom-list {
+        margin: 10px 0;
+        .el-form-item__label {
+            text-align: left;
+        }
+        .el-form .el-input--small {
+            width: 185px;
+        }
+        .svg-icon {
+            vertical-align: baseline;
+        }
+    }
+    .tool__tip {
+        font-size: 13px;
+        color: $textTips;
+    }
+    .tool__sign__form {
+        label.el-form-item__label::before {
+            width: 0;
+        }
+    }
+}

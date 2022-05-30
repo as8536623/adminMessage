@@ -1,0 +1,20 @@
+.password-content{
+    .el-form .el-input--small{
+        width: 70px !important;
+    }
+    .el__form-password .el-input--small{
+        width: 300px !important;
+        margin: 0 !important;
+    }
+    .el-checkbox{
+        color: $textPrimary;
+        margin-right: 40px;
+    }
+    .el__form__checkbox .el-checkbox{
+        margin-right: 60px;
+    }
+    .el-form-item__label:before{
+        width: 8px !important;
+        content: '';
+    }
+}

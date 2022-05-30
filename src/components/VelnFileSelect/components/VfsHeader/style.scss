@@ -1,0 +1,22 @@
+.vfv__header {
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 0 32px 0 16px;
+
+    .search__input__wrapper {
+        padding-top: 0;
+    }
+
+    .vfv__breadcrumb {
+        color: #666666;
+    }
+    
+    .vfv__breadcrumb--current {
+        color: #151515;
+    }
+    
+    .vfs__search {
+        margin-left: 20px;
+    }
+}

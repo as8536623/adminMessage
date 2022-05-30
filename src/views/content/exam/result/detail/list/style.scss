@@ -1,0 +1,36 @@
+.result-detail-container{
+    padding: 0 20px 20px;
+    .exam__nav{
+        border-bottom: 1px solid $borderColor;
+        padding: 20px 0;
+    }
+    .exam__name{
+        font-size: 16px;
+    }
+    .el-form{
+        padding-top: 20px;
+    }
+    .exam__statistics{
+        color: $textTips;
+        margin-top: 10px;
+        span{
+            margin-right: 20px;
+        }
+    }
+    .el-form .el-input--small {
+        width: 240px;
+    }
+}
+.item__excel__info {
+    margin-bottom: 10px;
+    width: 99%;
+    font-size: 12px;
+}
+
+.error__template__link {
+    padding: 20px;
+}
+.person__excel__link{
+    font-size: 12px;
+    margin-left: 10px;
+}

@@ -1,0 +1,11 @@
+.exam__container{
+    .el-form-item__label{
+        &:before{
+            width: 0;
+            content: none;
+        }
+    }
+    .el-form-item:last-child{
+        margin-right: 0;
+    }
+}

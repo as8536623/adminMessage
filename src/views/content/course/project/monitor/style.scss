@@ -1,0 +1,13 @@
+.project-monitor-container {
+    padding: 10px 20px;
+
+    .person__filter {
+        padding-bottom: 20px;
+    }
+
+    /deep/ .stone-filter {
+        .el-form .el-input--small {
+            width: 80px;
+        }
+    }
+}

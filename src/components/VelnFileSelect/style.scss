@@ -1,0 +1,160 @@
+.veln__file__select {
+    width: 890px;
+    background-color: #ffffff;
+    padding-top: 17px;
+    position: relative;
+    padding-bottom: 20px;
+
+    &.outer {
+        border-top: 1px solid $borderColor;
+
+        .vfs__footer {
+            display: none;
+        }
+    }
+
+    .el-tabs__nav {
+        .el-tabs__item {
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            font-weight: normal;
+            min-width: 96px;
+            text-align: center;
+            padding-right: 76px;
+            box-sizing: content-box;
+        }
+
+        .el-tabs__active-bar {
+            width: 96px !important;
+        }
+    }
+
+    .vfs__footer {
+        text-align: right;
+        padding-right: 50px;
+        margin-top: 30px;
+    }
+
+    .upload__progress {
+        height: 2px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .upload__progress__inner {
+        position: absolute;
+        height: 2px;
+        top: 0;
+        left: 0;
+        @include bg_primary();
+        transition: .15s;
+    }
+}
+
+.file__category__select {
+    height: 410px;
+    overflow-y: auto;
+}
+
+.vfs__empty__line {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: $textSub;
+    list-style: none;
+}
+
+.vfs__uploading__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.vfs__progressing {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.vfs__uploading__progress {
+    width: 50px;
+    height: 50px;
+}
+
+.vfs__file__progress {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.vfs__file__uploading {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.vfs__file__block {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    @include bg_primary();
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+}
+
+.vfs__audio__uploading {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vfs__audio__block {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include bg_primary();
+}
+
+.vfs__uploading__block {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+}

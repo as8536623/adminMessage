@@ -1,0 +1,24 @@
+.student-container {
+    padding: 20px;
+
+    .sign__stu__desc {
+        line-height: 32px;
+        color: $textSub;
+    }
+
+    //.el-range-editor--small.el-input__inner {
+    //    width: 340px;
+    //}
+    .el-form-item__label{
+        &:before{
+            width: 0;
+            content: none;
+        }
+    }
+    .custom__btn{
+        margin-left: 40px;
+    }
+    .el-form-item:last-child{
+        margin-right: 0;
+    }
+}

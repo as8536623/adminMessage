@@ -1,0 +1,22 @@
+.app-key-content {
+  line-height: 20px; }
+
+.standardInput {
+  height: 40px;
+  margin: 0 8px;
+  width: 20%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-indent: 5px; }
+
+.timeBox {
+  display: inline-block;
+  margin-right: 20px; }
+  .timeBox span {
+    padding-right: 10px; }
+
+.courseSelect {
+  width: 500px;
+  display: inline-block; }
+  .courseSelect .el-select {
+    width: 300px; }

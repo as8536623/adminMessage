@@ -1,0 +1,45 @@
+.exam-edit-container{
+    padding: 0 20px 20px;
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+    .el-input--small{
+        width: 70px;
+    }
+    .desc{
+        color: $textTips;
+    }
+    .desc__tips{
+        color: $red;
+    }
+    .form__page__btn{
+        margin: 20px 0 0 200px;
+    }
+    .el-radio-group{
+        font-size: 14px;
+    }
+    .el-radio{
+        line-height: 32px;
+    }
+    .el-checkbox{
+        line-height: 32px;
+    }
+    .el__form__time{
+        .veln__datetime__date{
+            width: 196px !important;
+        }
+        .veln__datetime__time{
+            width: 100px !important;
+        }
+    }
+    .el__form-inline{
+       display: inline-block;
+        margin-bottom: 0;
+    }
+    .person__tab__list{
+        .el-tag{
+            margin: 0 10px 10px 0;
+        }
+    }
+}

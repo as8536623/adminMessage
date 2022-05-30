@@ -1,0 +1,502 @@
+// 课程简介组件
+.detail__course {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #666666;
+    background-color: #ffffff;
+
+    &__title {
+        margin: 0 0 10px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 22px;
+    }
+
+    &__content {
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+}
+
+.course__file {
+    &__title {
+        margin: 0 0 10px 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__list__item {
+        position: relative;
+        padding: 10px 40px 10px 42px;
+        margin-bottom: 4px;
+        background: #F8F8F8;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .file-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 18px;
+            height: 22px;
+            background-image: url('../images/icons.png');
+            background-image: -webkit-image-set(url('../images/icons.png') 1x, url('../images/icons@2x.png') 2x, url('../images/icons@3x.png') 3x);
+            background-size: 76px;
+            background-repeat: no-repeat;
+
+            &[data-type="video"] {
+                background-position: -38px -22px;
+            }
+
+            &[data-type="audio"] {
+                background-position: 0 0;
+            }
+
+            &[data-type="word"] {
+                background-position: -38px 0;
+            }
+
+            &[data-type="excel"] {
+                background-position: -19px -22px;
+            }
+
+            &[data-type="ppt"],
+            &[data-type="pptx"] {
+                background-position: -58px 0;
+            }
+
+            &[data-type="pdf"] {
+                background-position: 0px -22px;
+            }
+
+            &[data-type="image"] {
+                background-position: -58px -22px;
+            }
+
+            &[data-type="unknown"] {
+                background-position: -19px 0;
+            }
+        }
+
+        .download-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            color: #999999;;
+            cursor: pointer;
+        }
+    }
+}
+
+// 目录组件
+.detail__catalog {
+    padding: 0 0 22px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #FFFFFF;
+    list-style-type: none;
+}
+
+.detail__catalog__chapter {
+    .chapter__content {
+        padding: 9px 100px 9px 14px;
+        background: #FAFAFA;
+        color: #999999;
+        cursor: pointer;
+    }
+
+    .chapter__icon {
+        font-size: 16px;
+        color: $textTips;
+    }
+
+    .chapter__order {
+        margin-left: 10px;
+    }
+
+    .chapter__name {
+        margin-left: 40px;
+    }
+}
+
+.detail__catalog__bar {
+    padding: 0 0 6px 0;
+    margin: 0;
+    list-style-type: none;
+
+    .bar__content {
+        position: relative;
+        padding: 8px 100px 8px 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+
+        &.active {
+            .bar__order, .bar__name, .catalog__play__radio {
+                @include font_primary();
+            }
+        }
+    }
+
+    .bar__order {
+        color: #999999;
+    }
+
+    .bar__name {
+        margin-left: 42px;
+    }
+}
+
+.catalog__play__radio {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 86px;
+    line-height: 20px;
+    color: #999999;
+
+    .play__icon {
+        font-size: 10px;
+        vertical-align: middle;
+    }
+
+    .pause__icon {
+        font-size: 14px;
+        vertical-align: middle;
+    }
+
+    .course__icon {
+        display: inline-block;
+        width: 14px;
+        margin-right: 4px;
+    }
+
+    .course__time {
+        display: inline-block;
+        width: 36px;
+        vertical-align: middle;
+    }
+}
+
+// 讲师简介组件
+.detail__trainer {
+    padding: 10px 20px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    background-color: #ffffff;
+
+    &__title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 22px;
+    }
+
+    &__list {
+        position: relative;
+        margin: 32px 0 42px;
+
+        .list__prev,
+        .list__next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 44px;
+            background: rgba(0, 0, 0, .5);
+            cursor: pointer;
+            line-height: 44px;
+            color: #ffffff;
+            font-size: 18px;
+
+            &:hover {
+                background: rgba(0, 0, 0, .65);
+            }
+        }
+
+        .list__prev {
+            left: -20px;
+            border-radius: 0 44px 44px 0;
+            text-align: left;
+
+            .icon__prev {
+                transform: rotate(180deg);
+            }
+        }
+
+        .list__next {
+            right: -20px;
+            border-radius: 44px 0 0 44px;
+            text-align: right;
+        }
+
+        .list__content {
+            position: relative;
+            display: flex;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .list__item {
+            display: flex;
+            margin: 0 15px;
+            width: 260px;
+            list-style-type: none;
+
+            .trainer__img {
+                display: block;
+                width: 66px;
+                height: 66px;
+                margin-right: 20px;
+                background-color: #e6e6e6;
+                border-radius: 50%;
+            }
+
+            .trainer__introduce {
+                width: 160px;
+
+                .name {
+                    font-size: 14px;
+                    margin: 0 0 10px;
+                    @include font_primary();
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-weight: normal;
+                }
+
+                .introduce {
+                    margin: 0;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    &__content {
+        .trainer__title {
+            margin: 0 0 12px;
+            @include font_primary();
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .trainer__introduce {
+            line-height: 22px;
+        }
+    }
+}
+
+
+// 课堂讨论
+.course__discuss {
+    padding: 20px 0;
+
+    .discuss__ask__wrapper {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        background-color: #F9F9F9;
+        text-align: center;
+    }
+
+    .discuss__list {
+        margin: 20px 0;
+    }
+
+    .discuss__item {
+        width: 100%;
+        border: 1px solid #EEEEEE;
+        border-radius: 2px;
+        min-height: 100px;
+        margin-bottom: 10px;
+        padding: 14px 20px 14px 10px;
+    }
+
+    .discuss__item--top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .discuss__avatar {
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    .discuss__info {
+        flex: 1;
+        padding-bottom: 20px;
+        margin-left: 10px;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .discuss__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .discuss__title {
+        font-size: 16px;
+        color: #333333;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 20px;
+        padding-top: 25px;
+    }
+
+    .discuss__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .edit__icon {
+        vertical-align: middle;
+    }
+
+    .discuss__item--bottom {
+        padding-left: 54px;
+    }
+
+    .discuss__statistics {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        color: #999999;
+    }
+
+    .discuss__total {
+        flex: 1;
+    }
+
+    .answer__item {
+        position: relative;
+        background: #F8F8F8;
+        border-radius: 2px;
+        min-height: 66px;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #999999;
+        border-left: 2px solid #CCCCCC;
+    }
+
+    .answer__text {
+        line-height: 20px;
+        margin-top: 10px;
+        word-break: break-all;
+    }
+
+    .el-button.el-button--small {
+        color: $white;
+        height: 36px;
+        min-width: 100px;
+    }
+
+    .el-button--mini {
+        color: $textTips;
+    }
+
+    .el-button--primary.el-button--mini {
+        padding: 9px 5px;
+        min-width: 64px;
+        color: $white;
+        box-sizing: border-box;
+    }
+
+    .answer__wrapper {
+        text-align: right;
+        margin-top: 14px;
+        overflow: hidden;
+    }
+
+    .el-textarea {
+        margin-bottom: 10px;
+    }
+
+    .el-textarea__inner {
+        border: 1px solid #EEEEEE;
+        border-radius: 1px;
+    }
+}
+
+
+// 讨论弹框
+.discuss__dialog {
+    .el-dialog__header {
+        color: $white;
+    }
+
+    .el-dialog__headerbtn {
+        top: 16px;
+    }
+
+    .el-dialog__title {
+        font-size: 16px;
+        color: #333333;
+    }
+
+    .el-dialog__body {
+        padding: 10px;
+        overflow: hidden;
+
+        .el-input--small {
+            width: 100%;
+        }
+    }
+}
+
+.dialog__input, .answer__wrapper {
+    /deep/ .el-dialog__close:hover {
+        color: $primary !important;
+    }
+
+    /deep/ .el-input__inner:hover, .el-input__inner:focus, .el-textarea__inner:hover, .el-textarea__inner:focus {
+        border-color: $primary !important;
+    }
+}
+
+.release_btn {
+    float: right;
+    span {
+        font-size: 14px;
+    }
+}

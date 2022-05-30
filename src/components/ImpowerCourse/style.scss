@@ -1,0 +1,80 @@
+.course__search {
+    margin-bottom: 10px;
+}
+
+.course-category {
+    display: inline-flex;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.dialog-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-selector {
+    &.not-edit {
+        padding-bottom: 20px;
+    }
+
+    .el-table-wrap .el-pagination {
+        text-align: center;
+    }
+}
+
+.auth-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid $borderColor;
+    padding: 10px 20px 10px 0;
+
+    .auth__number {
+        width: 80px;
+    }
+
+    .el-input-number--small {
+        width: 100%;
+    }
+
+    &>span {
+        margin: 0 10px;
+    }
+
+    .el-date-editor--date.el-input {
+        width: 120px;
+    }
+}
+
+.sync__select {
+    width: 100%;
+    padding: 50px;
+
+    /deep/ .el-select {
+        margin-right: 10px;
+    }
+}
+
+.sync_dialog-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setChargingStandard {
+    padding-right: 10px;
+    span {
+        display: inline-block;
+        font-size: 14px;
+        &.chargingLeft{
+            padding-right: 8px;
+        }
+        &.chargingright{
+            padding-left: 8px;
+        }
+    }
+    .el-input-number {
+        width: 80px;
+    }
+}

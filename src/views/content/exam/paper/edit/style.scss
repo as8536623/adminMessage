@@ -1,0 +1,42 @@
+.paper__question__container{
+    .veln__steps{
+        text-align: center !important;
+        border-bottom: 1px solid $borderColor;
+    }
+    .paper__question__content{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .paper__right{
+        width: 320px;
+        border: 1px solid $borderColor;
+        border-radius: 2px;
+        box-sizing: border-box;
+        display: inline-table;
+        overflow: hidden;
+    }
+    .paper__left{
+        display: table;
+        flex: 1;
+        border-radius: 2px;
+        margin-right: 20px;
+        padding: 15px;
+        background: #F8F8F8;
+    }
+    .page__btn__item{
+        padding: 20px 10px;
+    }
+    .paper__btn{
+        width: 100%;
+        background: $white;
+        border: 1px solid #E0E0E0;
+        height: 50px;
+        font-size: 14px;
+        color: $textPrimary;
+    }
+    .paper__tip{
+        color: $textTips;
+        padding-left: 10px;
+    }
+}

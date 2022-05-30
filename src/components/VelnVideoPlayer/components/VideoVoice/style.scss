@@ -1,0 +1,75 @@
+.veln__audio__player__voice {
+    position: relative;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+    &:hover {
+        .voice__level {
+            display: block;
+        }
+    }
+}
+
+.voice__icon {
+    color: #AAAAAA;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.voice__level {
+    position: absolute;
+    left: -2px;
+    bottom: 50px;
+    width: 24px;
+    height: 70px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        left: 10px;
+        bottom: 5px;
+        padding-top: 5px;
+        width: 4px;
+        height: 60px;
+        background: #666666;
+        border-radius: 2px;
+    }
+
+    &__progress {
+        position: relative;
+        height: 100%;
+        @include bg_primary();
+        border-radius: 2px 2px 2px 2px;
+    }
+
+    &__bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $white;
+        top: -16px;
+        left: -3px;
+        transform: scale(.5);
+        transform-origin: center;
+        transform-origin: left bottom;
+        cursor: pointer;
+
+        &:before {
+            display: inline-block;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            @include bg_primary();
+        }
+    }
+}

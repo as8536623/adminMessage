@@ -1,0 +1,112 @@
+.veln__file__document {
+    height: 440px;
+    padding: 10px 8px 0;
+    display: flex;
+    flex-direction: column;
+
+    .vfd__container {
+        margin: 0;
+        flex: 1;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-top: 11px;
+        padding: 6px 16px 1px;
+
+        .el-table-wrap {
+            width: 100%;
+        }
+    }
+
+    .vfd__line {
+        list-style: none;
+        position: relative;
+    }
+
+    .vfd__file__icon {
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .header--none__table {
+        .el-table__header {
+            display: none;
+        }
+    }
+
+    .vfd__line__checkbox {
+        width: 5%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .vfd__line__name {
+        width: 61%;
+        display: inline-flex;
+        vertical-align: middle;
+        align-items: center;
+    }
+
+    .vfd__name {
+        flex: 1;
+    }
+
+    .vfd__line__page {
+        width: 10%;
+        display: inline-block;
+        color: $textSub;
+        text-align: center;
+    }
+
+    .vfd__line__time {
+        width: 12%;
+        display: inline-block;
+        color: $textSub;
+        text-align: center;
+    }
+
+    .vfd__line__size {
+        width: 10%;
+        display: inline-block;
+        color: $textSub;
+        text-align: center;
+    }
+
+    .vfd__line {
+        min-height: 40px;
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .vfd__line__icon {
+        display: inline-block;
+        width: 18px;
+        height: 22px;
+        background-image: url('../../images/icons.png');
+        background-image: -webkit-image-set(url('../../images/icons.png') 1x, url('../../images/icons@2x.png') 2x, url('../../images/icons@3x.png') 3x);
+        background-size: 76px;
+        background-repeat: no-repeat;
+        vertical-align: -6px;
+        margin-right: 8px;
+
+        &[data-type="word"] {
+            background-position: -38px 0px;
+        }
+
+        &[data-type="excel"] {
+            background-position: -19px -22px;
+        }
+
+        &[data-type="ppt"],
+        &[data-type="pptx"] {
+            background-position: -58px 0px;
+        }
+
+        &[data-type="pdf"] {
+            background-position: 0px -22px;
+        }
+
+        &[data-type="unknown"] {
+            background-position: -19px 0;
+        }
+    }
+}

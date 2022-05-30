@@ -1,0 +1,124 @@
+.qgu__auth__table {
+    position: relative;
+
+    .header__arrow {
+        transform: rotate(180deg);
+        position: absolute;
+        top: 17px;
+        left: 10px;
+        color: $textSub;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .qat__icon {
+        color: #666666;
+        font-size: 16px;
+    }
+
+    .qat__header {
+        height: 50px;
+        line-height: 50px;
+        background-color: #F7F7F7;
+        padding-left: 35px;
+    }
+
+    .qat__title {
+        margin-left: 4px;
+    }
+
+    .qat__first {
+        position: relative;
+        overflow: hidden;
+        height: 44px;
+
+        &.expand {
+            height: auto;
+
+            .qat__expand__arrow {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:nth-child(even) {
+            background: #F9F7F7;
+        }
+
+        .qat__expand__arrow {
+            position: absolute;
+            display: block;
+            width: 14px;
+            height: 14px;
+            top: 14px;
+            left: 10px;
+            cursor: pointer;
+            transform: rotate(90deg);
+            transition: .15s;
+
+            &::before {
+                content: '';
+                display: block;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-bottom: 5px solid $textSub;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .qat__arrow {
+            transform: rotate(180deg);
+            transition: all .3s;
+            position: absolute;
+            top: 17px;
+            left: 10px;
+            cursor: pointer;
+            color: $textSub;
+            transition: all .3s;
+        }
+    }
+
+    .qat__first,
+    .qat__second {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .qat__first__title,
+    .qat__second__title {
+        flex-shrink: 0;
+        width: 240px;
+        min-height: 44px;
+        padding: 14px 10px 4px 20px;
+        box-sizing: border-box;
+        border-right: 1px solid #F0F0F0;
+        border-bottom: 1px solid #F0F0F0;
+        .el-checkbox__label{
+            vertical-align: top;
+        }
+    }
+
+    .qat__first__title {
+        padding-left: 35px;
+    }
+
+    .qat__third__line {
+        min-height: 44px;
+        padding: 14px 10px 0 20px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #F0F0F0;
+    }
+
+    .qat__third {
+        min-width: 146px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+    }
+
+    .qat__sub,
+    .qat__third__line {
+        flex: 1;
+    }
+}

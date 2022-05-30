@@ -1,0 +1,45 @@
+.app__row--left,
+.app__row--right {
+  padding: 20px 10px;
+  overflow-y: auto;
+  max-height: 100%; }
+
+.role__header {
+  margin-bottom: 20px; }
+
+.role__name,
+.auth__opt {
+  display: inline-block; }
+
+.auth__opt {
+  margin-left: 20px; }
+
+.role__name__edit {
+  color: #666666; }
+
+.add__role__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+.course__type__select {
+  width: 240px; }
+
+.manage-container .el-form .el-input--small {
+  width: 240px; }
+.manage-container .el-form-item--small.el-form-item {
+  margin-bottom: 10px; }
+
+.sync__select {
+  width: 100%;
+  padding: 50px; }
+  .sync__select /deep/ .el-select {
+    margin-right: 10px; }
+
+.sync_dialog-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */

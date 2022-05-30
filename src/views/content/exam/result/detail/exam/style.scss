@@ -1,0 +1,155 @@
+.exam-detail-container {
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    .exam__detail__nav {
+        height: 120px;
+        border-bottom: 1px solid $borderColor;
+        background: $white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .exam__nav__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 300px;
+        border-right: 1px solid $borderColor;
+        height: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+    .exam__user__icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin-right: 20px;
+    }
+    .exam__nav__info {
+        font-size: 16px;
+    }
+    .exam__type {
+        color: $textTips;
+    }
+    .exam__nav__right {
+        flex: 1;
+        padding: 0 40px;
+    }
+    .exam__nav__desc {
+        color: $textTips;
+        margin-top: 10px;
+        span {
+            margin-right: 20px;
+        }
+    }
+    .exam__p {
+        color: $red;
+        &.pass {
+            @include font_primary();
+        }
+    }
+    .exam__detail__content {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .exam__content__right {
+        right: 32px;
+        position: fixed;
+        flex-shrink: 0;
+        width: 300px;
+        background: $white;
+    }
+    .exam__content__left {
+        background: $white;
+        flex: 1;
+        margin-right: 320px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .exam__right__title {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid $borderColor;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .exam__order__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+    .exam__order__item {
+        width: 40px;
+        height: 80px;
+        margin: 0 20px 20px 0;
+        cursor: pointer;
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+    }
+    .exam__order, .exam__status {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .exam__order {
+        border: 1px solid $examEmptyBorder;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: none;
+    }
+    .right {
+        border: 1px solid $examRightBorder;
+        background: $examRightBg;
+        color: $examRightText;
+    }
+    .wrong {
+        border: 1px solid $examWrongBorder;
+        background: $examWrongBg;
+    }
+    .empty {
+        border: 1px dashed $examEmptyBorder;
+    }
+    .exam__detail__btn {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .exam__order__desc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin: 200px 0 20px 0;
+    }
+    .exam__desc__item {
+        flex: 1;
+    }
+    .exam__desc__tip {
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .exam__desc__border {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px dashed $examEmptyBorder;
+        line-height: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .right__border {
+        border: 1px solid $examRightBorder;
+        background: $examRightBg;
+        color: $examRightText;
+    }
+    .wrong__border {
+        border: 1px solid $examWrongBorder;
+        background: $examWrongBg;
+    }
+}

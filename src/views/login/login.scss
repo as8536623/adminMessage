@@ -1,0 +1,36 @@
+.bgk__login.login__container {
+    .login__info {
+        width: 140px;
+        height: 161px;
+        position: absolute;
+        top: 188px;
+        left: 170px;
+        z-index: 10;
+        transform: translateX(0);
+    }
+
+    .login__logo__image {
+        width: 140px;
+        height: 161px;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+
+    .bg__content {
+        background-position: center bottom;
+    }
+
+    .login__btn {
+        margin-top: 24px;
+        width: 140px;
+        height: 46px;
+        background-color: #108EE9;
+        border-radius: 100px;
+        border: none;
+        background-image: none;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.veln__file__upload {
+    .el-dialog {
+        .el-dialog__header {
+            border-bottom: none;
+            background: #F5F5F5;
+        }
+    }
+
+    .vfu--top {
+        height: 122px;
+        background: #F5F5F5;
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .vfu__fold {
+        width: 80px;
+        height: 62px;
+        background: url('./images/folder.png') transparent center center no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: bold;
+        line-height: 70px;
+    }
+
+    .vfu--bottom {
+        height: 248px;
+        box-sizing: border-box;
+        padding: 28px 30px;
+    }
+
+    .vfu__tips {
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+        margin-bottom: 14px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .vfu__template {
+        text-align: center;
+        margin-bottom: 30px;
+
+        .el-button.el-button--text {
+            padding: 3px 0;
+        }
+    }
+
+    .vfu__upload {
+        overflow: hidden;
+        padding-bottom: 1px;
+        margin-bottom: 9px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .vfu__upload__label {
+        font-size: 14px;
+        color: $textSub;
+        margin-right: 20px;
+        line-height: 36px;
+    }
+
+    .vfu__upload__wrapper {
+        width: 348px;
+        position: relative;
+    }
+
+    .vfu__upload__main {
+        height: 36px;
+        border: 1px solid $borderColor;
+        border-radius: 2px;
+        position: relative;
+
+        &.fail {
+            .vfu__file__progress {
+                color: $error;
+            }
+
+            .vfu__upload__progress {
+                background-color: $error;
+            }
+        }
+
+        &.success {
+            .vfu__file__progress {
+                @include font_primary();
+            }
+
+            .vfu__upload__progress {
+                @include bg_primary();
+            }
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 15px;
+            width: 1px;
+            background-color: $borderColor;
+            position: absolute;
+            right: 38.5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .vfu__file__name {
+            color: #999999;
+
+            &.done {
+                color: $textSub;
+            }
+        }
+    }
+
+    .vfu__file__icon {
+        color: #999999;
+        font-size: 14px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+    }
+    .vfu__file__icon:hover{
+        color: $btnPrimaryHover;
+    }
+
+    .vfu__upload__container {
+        height: 100%;
+        line-height: 36px;
+        padding: 0 38.5px 0 10px;
+    }
+
+    .vfu__status__wrapper {
+        height: 18px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    .vfu__upload__status {
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        color: $textSub;
+        text-align: center;
+
+        .el-icon-error {
+            color: $error;
+        }
+
+        .el-icon-success {
+            color: #87D068;
+        }
+    }
+
+    .vfu__upload__progress {
+        height: 2px;
+        position: absolute;
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        @include bg_primary();
+        border-radius: 2px;
+        transition: all .15s ease-in-out;
+
+        &.error {
+            background-color: #FF6600;
+        }
+    }
+
+    .vfu__upload__dom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,119 @@
+.km__detail {
+    display: flex;
+    flex-direction: row;
+
+    .km__content {
+        flex: 1;
+        background-color: $white;
+        padding: 30px;
+    }
+
+    .km__info {
+        width: 300px;
+        height: 620px;
+        background-color: $white;
+        margin-left: 12px;
+        padding: 24px 20px;
+    }
+
+    .km__info__header {
+        @include font_primary();
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 16px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 18px;
+            position: absolute;
+            @include bg_primary();
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .km__info__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .km__info__line {
+        list-style: none;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 20px;
+        min-height: 20px;
+        margin-bottom: 14px;
+    }
+
+    .km__info__label {
+        width: 94px;
+        display: block;
+    }
+
+    .km__info__text {
+        margin-left: 94px;
+        color: $textSub;
+    }
+
+    .km__title {
+        text-align: center;
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+
+    .km__sub {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .km__sub__item {
+        font-size: 12px;
+        line-height: 17px;
+        color: $textSub;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .km__detail__table {}
+
+    .view__nav {
+        height: 29px;
+        border-bottom: 1px solid $borderColor;
+        overflow: hidden;
+        margin-top: 24px;
+        margin-bottom: 17px;
+    }
+
+    .view__nav__item {
+        width: 102px;
+        height: 29px;
+        margin-right: 43px;
+        text-align: center;
+        line-height: 29px;
+        color: $textSub;
+        cursor: pointer;
+
+        &.active {
+            background: url('./components/images/nav_active.png') transparent center center no-repeat;
+            background-size: contain;
+            color: $white;
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &:hover {
+            @include font_primary();
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.course__chapter {
+    padding-top: 22px;
+
+    .chapter__sec {
+        display: flex;
+        padding: 13px 0 0 12px;
+        background: #F8F8F8;
+        margin-bottom: 12px;
+    }
+
+    .chapter__icon {
+        margin-top: 3px;
+        margin-right: 10px;
+        color: $textTips;
+    }
+
+    .chapter__content {
+        flex: 1;
+    }
+
+    .chapter__header {
+        padding-bottom: 7px;
+    }
+
+    .chapter__title {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    .chapter__description {
+        font-size: 14px;
+        color: $textTips;
+        line-height: 20px;
+    }
+
+    .chapter__item {
+        padding: 10px;
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $borderColor;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            left: 0;
+            top: 50%;
+            margin-top: -4px;
+            background-color: $textTips;
+            border-radius: 4px;
+        }
+    }
+
+    .chapter__item__title {
+        margin-right: 10px;
+    }
+
+    .chapter__btn {
+        align-items: center;
+        display: none;
+    }
+}

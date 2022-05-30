@@ -1,0 +1,28 @@
+.sign__container__detail{
+    padding: 10px 20px;
+    .tool__sign__form{
+        label.el-form-item__label::before{
+            width: 0;
+        }
+    }
+    .sign__edit__btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 48px;
+        font-size: 14px;
+        cursor: pointer;
+        color: $btnPrimary;
+        &:hover,&:focus{
+            color: $btnPrimaryHover;
+        }
+    }
+}
+.tool-participants{
+    .sign__label-item .el-form-item__label{
+        line-height: 40px;
+    }
+    .el-tabs__nav-wrap{
+        width: 99%;
+    }
+}

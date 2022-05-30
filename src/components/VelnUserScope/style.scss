@@ -1,0 +1,33 @@
+.veln__organize__select {
+    padding: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+
+    .vos__active__name {
+        margin-top: 18px;
+    }
+
+    .user__scope__form {
+        padding: 0 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        line-height: 32px;
+    }
+
+    .btn__line--bottom {
+        margin-top: 20px;
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+.juri__dlg {
+    padding: 20px 20px 10px 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    .juri__dlg__query {
+        margin-bottom: 20px;
+    }
+    .juri__user__btns{
+        margin-top: 10px;
+    }
+}

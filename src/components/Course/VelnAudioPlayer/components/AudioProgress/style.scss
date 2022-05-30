@@ -1,0 +1,35 @@
+.veln__audio__player__wrapper {
+    position: relative;
+    flex: 1;
+    height: 4px;
+    background: #666666;
+}
+
+.veln__audio__player__progress {
+    position: relative;
+    height: 100%;
+    @include bg_primary();
+    //transition: 0.1s;
+}
+
+.veln__audio__player__bar {
+    cursor: pointer;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    @include bg_assistant();
+    top: -5px;
+    right: -7px;
+    &:before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        @include bg_primary();
+        top: 4px;
+        left: 4px;
+    }
+}

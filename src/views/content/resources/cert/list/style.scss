@@ -1,0 +1,15 @@
+.cert__block {
+    .outer__user__wrapper {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 8px;
+        @include bg_primary();
+        border-radius: 32px;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+}

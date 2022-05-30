@@ -1,0 +1,428 @@
+body {
+    background-color: #070F29;
+}
+
+p,
+ol {
+    margin: 0;
+}
+
+$imgUrl: './img/';
+
+div.container__wrap {
+    height: 100%;
+    overflow-y: auto;
+
+    //@include bg-img('bg', 'jpg');
+    background-image: url("./img/bg@2x.jpg");
+    .report__fullscreen,
+    .report__halfscreen {
+        cursor: pointer;
+        position: absolute;
+        font-size: 14px;
+        z-index: 10;
+        top: 8px;
+        right: 28px;
+    }
+}
+
+@mixin bg-img($url,$suffix: 'png') {
+    background-image: url(#{imgUrl}#{url}.#{suffix});
+    background-image: -webkit-image-set(url(#{imgUrl}#{url}.#{suffix}) 1x, url(#{imgUrl}#{url}@2x.#{suffix}) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 1920px;
+    height: 1080px;
+    line-height: 1.38;
+    transform-origin: left top;
+
+    &__wrap {
+        overflow: hidden;
+    }
+
+}
+
+.board__hd {
+    font-size: 32px;
+    line-height: 45px;
+    color: #7EFAFC;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.board__bd {
+    > .board-flex {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        > .board-flex__item {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+.board-flex {
+    display: flex;
+
+    &__item {
+        flex: 1;
+    }
+}
+
+.board-card {
+    width: 162px;
+    height: 92px;
+    text-align: center;
+    margin-right: 64px;
+    margin-bottom: 16px;
+
+    &__section {
+        @extend .board-flex;
+        margin-top: 85px;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    //@include bg-img('bg_1');
+    background-image: url("./img/bg_1@2x.png");
+
+
+    &__label {
+        font-size: 16px;
+        color: #00F1FF;
+        padding-top: 9px;
+    }
+
+    &__detail {
+        font-size: 24px;
+        color: #00F1FF;
+        font-weight: bold;
+        padding-top: 18px;
+    }
+}
+
+.board-analyze {
+    margin-top: 20px;
+
+    &-1 {
+        width: 613px;
+        height: 462px;
+        background-image: url("./img/bg_2@2x.png");
+    }
+
+    &-2 {
+        width: 613px;
+        height: 295px;
+        background-image: url("./img/bg_3@2x.png");
+    }
+
+    &-3 {
+        width: 613px;
+        height: 610px;
+        background-image: url("./img/bg_4@2x.png");
+    }
+
+    &__hd {
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding-top: 15px;
+        text-align: center
+    }
+
+    &__bd {
+    }
+
+}
+
+//课程学习排行榜
+.board-course-rank {
+    margin-bottom: 17px;
+    position: relative;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+
+    &s {
+        padding: 33px 20px 0 21px;
+        list-style: none;
+    }
+
+    &__no {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        margin-top: 1px;
+        text-align: center;
+        font-size: 12px;
+        color: #FFFFFF;
+        float: left;
+        background-color: #25BFCA;
+
+        &.no-1 {
+            background-color: #B74242;
+        }
+
+        &.no-2 {
+            background-color: #FF7438;
+        }
+
+        &.no-3 {
+            background-color: #0060FF;
+        }
+    }
+
+    &__bd {
+        height: 18px;
+        line-height: 18px;
+        margin-left: 23px;
+        padding-right: 372px;
+        font-size: 13px;
+        color: #26BCF8;
+        font-weight: bold;
+
+       @extend .text-ellipsis;
+    }
+
+    &__ft {
+        width: 362px;
+        font-size: 0;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 2px;
+
+    }
+}
+
+//企业学时排行榜
+.board-company-rank {
+    margin-bottom: 16px;
+    position: relative;
+    list-style: none;
+    position: relative;
+
+    &s {
+        padding: 48px 28px 0 38px;
+        list-style: none;
+    }
+
+    &__no {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-size: 12px;
+        color: #FFFFFF;
+        float: left;
+        font-weight: bold;
+        background-image: linear-gradient(90deg, rgba(38, 117, 234, 0.50) 0%, #01E9FF 100%);
+    }
+
+    &__bd {
+        height: 24px;
+        line-height: 24px;
+        margin-left: 54px;
+        padding-right: 130px;
+        font-size: 13px;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-indent: 20px;
+        background-image: linear-gradient(90deg, rgba(38, 117, 234, 0.00) 0%, rgba(19, 178, 245, 0.52) 52%, #01E9FF 100%);
+
+        @extend .text-ellipsis;
+    }
+
+    &__ft {
+        width: 100px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 13px;
+        color: #FFFFFF;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+//产品活跃度
+.board-dashboard {
+    color: #fff;
+    margin-top: 48px;
+    text-align: center;
+
+    &__panel {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__bd {
+        width: 260px;
+        height: 127px;
+        position: relative;
+        display: inline-block;
+
+        background-image: url("./img/dashboard@2x.png");
+        background-size: contain;
+    }
+
+    &__point {
+        width: 117px;
+        height: 10px;
+
+        background-image: url("./img/point@2x.png");
+        position: absolute;
+        bottom: -5px;
+        left: 38px;
+        transform-origin: 92px 8px;
+        transition: all .2s;
+        background-size: contain;
+    }
+
+    &__des {
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: -0.14px;
+        text-align: center;
+        margin-top: 28px;
+    }
+}
+
+.board-course-rank-progress {
+    &__wrap {
+        display: inline-block;
+        width: 100%;
+        height: 14px;
+        background: rgba(0, 208, 255, 0.26);
+        border-radius: 100px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, #2771E9 2%, #00EAFF 100%);
+    border-radius: 100px;
+    height: 14px;
+    width: 0;
+    transition: width .2s;
+}
+
+.wordCloud.board-word-cloud {
+    display: block;
+    width: 98%;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.board-dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    &__bd {
+        width: 613px;
+        height: 610px;
+
+        background-image: url("./img/dialog_bg@2x.png");
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    &__hd {
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 16px;
+    }
+
+    &__course-name {
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 29px;
+        margin-bottom: 23px;
+        font-weight: bold;
+
+    }
+}
+
+.board-dialog-mask {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.board-table {
+    margin: 0 22px;
+    color: #fff;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    td,
+    th {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    thead {
+        td {
+            height: 30px;
+        }
+
+        background-image: linear-gradient(90deg, rgba(38, 117, 234, 0.00) 6%, rgba(38, 117, 234, 0.52) 33%, rgba(12, 198, 249, 0.63) 77%, rgba(1, 233, 255, 0.00) 100%);
+    }
+
+    tbody {
+        td {
+            height: 39px;
+        }
+    }
+
+    tr {
+        &:nth-child(2n) {
+            background-image: linear-gradient(90deg, rgba(38, 117, 234, 0.00) 6%, rgba(38, 117, 234, 0.52) 33%, rgba(12, 198, 249, 0.63) 77%, rgba(1, 233, 255, 0.00) 100%);
+
+        }
+
+        > td {
+            &:first-child {
+                padding-left: 30px;
+            }
+        }
+    }
+}

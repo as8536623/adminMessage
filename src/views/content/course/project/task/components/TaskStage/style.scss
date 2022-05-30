@@ -1,0 +1,96 @@
+.task__stage {
+    height: auto;
+    border: 1px solid #F0F0F0;
+    margin-bottom: 20px;
+
+    &.fold {
+        height: 60px;
+        overflow: hidden;
+    }
+
+    .stage__info {
+        display: flex;
+        height: 60px;
+        background-color: #f9f9f9;
+        align-items: center;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .stage__arrow__wrapper {
+        transition: .15s;
+
+        &.unfold {
+            transform: rotate(90deg);
+        }
+    }
+
+    .stage__arrow {
+        width: 14px;
+        height: 14px;
+        color: $textTips;
+    }
+
+    .stage__arrow__wrapper {
+        margin-right: 20px;
+    }
+
+    .stage__name {
+        flex: 1;
+        margin-right: 20px;
+        width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .stage__opts {
+        margin-left: auto;
+        display: flex;
+    }
+
+    .stage__time__range {
+        width: 240px;
+        margin-right: 120px;
+    }
+
+    .stage__icon {
+        width: 16px;
+        height: 16px;
+        color: $textSub;
+        margin-left: 10px;
+    }
+
+    .task__type__selector {
+        margin-right: 20px;
+        outline: none;
+
+        * {
+            outline: none;
+        }
+    }
+
+    .task__type__placeholder {
+        display: flex;
+        align-items: center;
+        @include font_primary();
+    }
+
+    .task__selector__arrow {
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+        @include font_primary();
+    }
+
+    .task__opts__label {
+        margin-right: 20px;
+    }
+
+    .stage__task__opts {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+    }
+}

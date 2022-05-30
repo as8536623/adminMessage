@@ -1,0 +1,89 @@
+.reappraisal-container {
+    padding: 20px;
+
+    .reappraisal__nav {
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .reappraisal__type {
+        font-size: 16px;
+    }
+
+    .reappraisal__tip {
+        color: $textTips;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .reappraisal__name {
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    .reappraisal__content {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+    }
+
+    .reappraisal__right {
+        position: fixed;
+        padding: 10px;
+        width: 500px;
+        background: #F8F8F8;
+        box-sizing: border-box;
+        right: 42px;
+    }
+
+    .reappraisal__left {
+        flex: 1;
+        //background: #F8F8F8;
+        //margin-right: 520px;
+    }
+
+    .reappraisal__info {
+        margin-bottom: 10px;
+        color: $textTips;
+    }
+
+    .el-form-item__label {
+        color: $examTextActive;
+
+        &:before {
+            width: 0;
+        }
+    }
+
+    span {
+        vertical-align: middle;
+    }
+
+    .el-input--small {
+        width: 70px;
+    }
+
+    .mark__btn {
+        margin: 20px 10px;
+        text-align: center;
+    }
+}
+
+.mark__score__total {
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px dashed $examActiveBg;
+    background: #fffaf6;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mark__score__item {
+    margin-right: 40px;
+    color: $textSub;
+
+    .score {
+        color: $examTextActive;
+    }
+}

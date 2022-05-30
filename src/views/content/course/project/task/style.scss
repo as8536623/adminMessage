@@ -1,0 +1,53 @@
+.project__task {
+    min-height: 100%;
+
+    .task__container {
+        display: flex;
+        height: 100%;
+        flex: 1;
+    }
+
+    .aside__aside {
+        width: 200px;
+        height: 100%;
+        padding: 20px 0;
+        flex-shrink: 0;
+    }
+
+    .aside__content {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .project__type {
+        display: flex;
+    }
+
+    .task__info {
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        margin-bottom: 10px;
+    }
+
+    .add__stage {
+        margin-left: auto;
+    }
+
+    .task__info__item {
+        margin-right: 20px;
+    }
+
+    .task--empty {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $textTips;
+        font-size: 12px;
+    }
+
+    .btn__line {
+        margin-top: 50px;
+    }
+}

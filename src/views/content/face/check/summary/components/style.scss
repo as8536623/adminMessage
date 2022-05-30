@@ -1,0 +1,137 @@
+.review__content{
+    padding: 7.5px 26px 13.5px 26px;
+    .info{
+        align-items: center;
+    }
+    .name{
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        color: $textPrimary;
+        padding-right: 4px;
+    }
+    .status{
+        width: 46px;
+        height: 18px;
+        line-height: 19px;
+        text-align: center;
+        background: $defaultStatusBg;
+        border-radius: 100px;
+        font-size: 10px;
+        color: $white;
+    }
+    .ing{
+        background: $ingStatusBg;
+    }
+    .no__start{
+        background: $noStartStatusBg;
+    }
+    .join{
+        width: 46px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        font-size: 10px;
+        color: $defaultJoinText;
+        background: $defaultJoinBg;
+        border-radius: 100px;
+    }
+    .join__active{
+        @include font_primary();
+        background: $JoinActiveBg;
+    }
+    .desc{
+        align-items: center;
+        margin-top: 7px;
+        height: 18px;
+        line-height: 18px;
+    }
+    .time{
+        font-size: 12px;
+        color: $textTips;
+        margin: 0 38px 0 20px;
+        min-width: 135px;
+    }
+    .bean{
+        font-size: 12px;
+        position: relative;
+        @include font_primary();
+    }
+    .bean__icon{
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url("./images/bean@2x.png");
+        background-size: contain;
+        margin-right: 5px;
+        vertical-align: text-top;
+    }
+    .score{
+        font-size: 12px;
+        @include font_primary();
+    }
+    .no__submit{
+        font-size: 12px;
+        color: $textTips;
+    }
+}
+.review__item{
+    position: relative;
+    height: 68px;
+    padding-left: 18px;
+    border-left: 1px solid $btnDefaultBorder;
+    &:first-child:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 1px;
+        height: 16px;
+        background: white;
+        left: -1px;
+    }
+    &:last-child:before{
+        position: absolute;
+        content: '';
+        top: 16px;
+        width: 1px;
+        height: 55px;
+        background: white;
+        left: -1px;
+    }
+}
+.review__info{
+    padding: 12.5px 0;
+    height: 100%;
+    border-bottom: 1px solid $btnDefaultBorder;
+}
+.circle{
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: $white;
+    border-radius: 100%;
+    left: -8px;
+    top: 16px;
+    &:before{
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background: $defaultCircleBtn;
+        top: 4px;
+        left: 4px;
+    }
+}
+.circle__active{
+    &:before{
+        background: $finishCircleBtn;
+    }
+}
+.flex__row{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}

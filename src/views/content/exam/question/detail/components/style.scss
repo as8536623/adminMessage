@@ -1,0 +1,38 @@
+.question__detail__block{
+    .question__ct{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .el-checkbox, .el-radio{
+        margin-right: 5px;
+    }
+    .question__type{
+        color: $examActiveBg;
+    }
+    .question__ios{
+        padding: 0 60px;
+    }
+    .question__ios__item{
+        line-height: 40px;
+    }
+    .question__a {
+        background: $white;
+        border: 1px solid $borderColor;
+        border-radius: 2px;
+        min-height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        transition: 0.1s all;
+        margin: 10px 0 20px 0;
+        label {
+            @include font_primary();
+            flex-shrink: 0;
+            font-weight: 500;
+        }
+    }
+}

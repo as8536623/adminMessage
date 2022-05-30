@@ -1,0 +1,36 @@
+.default__page {
+    width: 100%;
+    padding: 114px 0;
+    text-align: center;
+
+    .default__icon {
+        width: 100%;
+        height: 233px;
+        background-image: url("./images/default.png");
+        background-image: image-set(url('./images/default.png') 1x, url('./images/default@2x.png') 2x);
+        background-image: -webkit-image-set(url('./images/default.png') 1x, url('./images/default@2x.png') 2x);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .search {
+        background-image: url("./images/search.png");
+        background-image: image-set(url('./images/search.png') 1x, url('./images/search@2x.png') 2x);
+        background-image: -webkit-image-set(url('./images/search.png') 1x, url('./images/search@2x.png') 2x);
+    }
+
+    .comment {
+        background-image: url("./images/comment.png");
+        background-image: image-set(url('./images/comment.png') 1x, url('./images/comment@2x.png') 2x);
+        background-image: -webkit-image-set(url('./images/comment.png') 1x, url('./images/comment@2x.png') 2x);
+    }
+
+    .default__text {
+        font-size: 14px;
+        color: #888888;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 6px;
+    }
+}

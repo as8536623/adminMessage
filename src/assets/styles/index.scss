@@ -1,0 +1,744 @@
+@import 'variables.scss';
+@import 'mixin';
+@import 'transition';
+@import 'element-ui.scss';
+@import 'header.scss';
+@import 'sidebar';
+@import 'btn.scss';
+@import 'login';
+@import 'search-form';
+
+body {
+    font-size: 14px;
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    color: $textPrimary;
+}
+
+label {
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+
+    body {
+        overflow: hidden;
+    }
+}
+
+#app {
+    height: 100%;
+    background-color: $bg;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.hide {
+    display: none !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.padding-content {
+    padding: 4px 0;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inlineBlock {
+    display: block;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+code {
+    background: #eef1f6;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    display: inline-block;
+    line-height: 36px;
+    font-size: 15px;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
+    a {
+        color: #337ab7;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(32, 160, 255);
+        }
+    }
+}
+
+.warn-content,
+.form-test {
+    background: rgba(66, 185, 131, .1);
+    border-radius: 2px;
+    padding: 16px;
+    padding: 1rem;
+    line-height: 1.6rem;
+    word-spacing: .05rem;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+
+    a {
+        color: #42b983;
+        font-weight: 600;
+    }
+
+    em {
+        color: #3e94ff;
+        font-weight: 600;
+    }
+
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    .tip {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #f4861e;
+    }
+}
+
+//main-container全局样式
+.app-container {
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content-wrapper {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content__container {
+    position: relative;
+    margin: 0 12px;
+    border-radius: 2px;
+    flex: 1;
+    background-color: $white;
+
+    &.bg--gray {
+        background-color: #ECECEC;
+    }
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 1000px;
+}
+
+//公用样式
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.opt__line {
+    min-height: 40px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    width: 99%;
+}
+
+.opt__block {
+    margin-bottom: 10px;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor !important;
+    overflow: hidden;
+}
+
+.app-wrapper {
+    background-color: $bg;
+    min-width: 1280px;
+    overflow-x: auto;
+}
+
+.text--right {
+    text-align: right;
+}
+
+.text--disabled {
+    color: #999999;
+
+    &:hover {
+        color: #999999;
+        opacity: 0.85;
+    }
+}
+
+.app-main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    height: auto !important;
+}
+
+.app__footer {
+    height: 38px;
+    line-height: 38px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 12px;
+}
+
+.app__container,
+.saas__container {
+    width: 100%;
+    height: 100%;
+}
+
+.app-container {
+    background-color: #ffffff;
+}
+
+.app__row--left,
+.app__row--right {
+    padding: 20px 10px;
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+}
+
+.login-form {
+    .el-form-item__content {
+        width: auto;
+    }
+}
+
+.form__page {
+    padding: 20px;
+
+    .form__page__title {
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid $borderColor;
+    }
+}
+
+.text-gray {
+    color: #666666;
+}
+
+.text--primary {
+    @include font_primary();
+}
+
+.text--center {
+    text-align: center;
+}
+
+.table__td__link {
+    @include font_primary();
+    cursor: pointer;
+
+    &:hover {
+        opacity: .75;
+    }
+}
+.table__td__operation {
+    padding: 0 4px;
+    @include font_primary();
+    cursor: pointer;
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.table__td__ellipsis {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.veln__width {
+    width: 99%;
+}
+
+.saas__iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.user__avatar {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.empty__text {
+    text-align: center;
+    line-height: 32px;
+    color: $textTips;
+}
+
+.container__padding {
+    padding: 20px;
+}
+
+.project__padding {
+    padding: 20px;
+}
+
+.aside__padding {
+    padding: 0 20px;
+}
+
+.veln__tips {
+    font-size: 12px;
+    color: $textTips;
+}
+
+.category__tree {
+    .el-tree {
+        & > .el-tree-node {
+            & > .el-tree-node__content {
+                .tree__option {
+                    .el-button:not(.add) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .tree__option {
+        display: none;
+        vertical-align: 1px;
+    }
+
+    .el-tree-node__content {
+        &:hover {
+            .tree__option {
+                display: inline;
+            }
+        }
+    }
+}
+
+.app__row--left--setting {
+    .category__icon__svg {
+        padding: 4px;
+        font-size: 22px;
+        @include bg_primary();
+        color: #FFFFFF;
+        border-radius: 2px;
+    }
+
+    .category__icon {
+        position: absolute;
+        top: 73px;
+        right: 12px;
+        cursor: pointer;
+        @include font_primary();
+    }
+
+    .qgu__tree .include__child {
+        right: 45px;
+    }
+}
+
+.el-table [class*=" el-icon-"],
+.el-table [class^=el-icon-] {
+    color: $textSub;
+
+    &:hover {
+        @include font_primary();
+    }
+}
+
+.el-button.el-button--text.text--blue__btn {
+    @include font_primary();
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.el-form {
+    .link__form__item {
+        display: inline-block;
+        margin-right: 10px;
+
+        .el-input--small {
+            width: 100px;
+        }
+    }
+}
+
+.veln__query__line {
+    margin-bottom: 12px;
+}
+
+.el__button__link {
+    margin-right: 8px;
+}
+
+.navbar--back {
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:hover {
+        @include font_primary();
+
+        .navbar--back__icon {
+            @include font_primary();
+        }
+    }
+
+    .navbar--back__icon {
+        font-size: 12px;
+        vertical-align: -1px;
+    }
+}
+
+// videojs
+.video-player {
+    * {
+        outline: none;
+    }
+}
+
+.video-js .vjs-mute-control {
+    outline: none;
+}
+
+.video-js .vjs-tech {
+    outline: none;
+}
+
+.video-js .vjs-volume-panel {
+    width: 6em !important;
+}
+
+.video-js .vjs-volume-panel .vjs-volume-control {
+    width: 3em !important;
+    height: .3em !important;
+    opacity: 1 !important;
+}
+
+// 考试预览
+.veln__question__audio {
+    display: inline-flex;
+    width: 125px;
+    height: 28px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 100px;
+    flex-direction: row;
+    padding: 0 9px;
+    margin: 0 5px 6px;
+    align-items: center;
+
+    &.audio--playing {
+        .question__audio__icon {
+            &.play {
+                width: 16px;
+                height: 14px;
+                background: url('../images/pause.png') transparent center center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    .question__audio__icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+
+        &.play {
+            background: url('../images/play.png') transparent center center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .question__audio__progress {
+        width: 81px;
+        height: 18px;
+        background-color: #E1E1E1;
+        position: relative;
+    }
+
+    .audio__progress--top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/audio_top.png') transparent center center no-repeat;
+        background-size: 100% 100%;
+        z-index: 2;
+    }
+
+    .audio__progress--bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        @include bg_primary();
+        z-index: 1;
+        transition: .1s;
+    }
+}
+
+.veln__question__image {
+    max-width: 300px;
+}
+
+.flex__row {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.video-player {
+    &.vjs-custom-skin > .video-js .vjs-big-play-button {
+        width: 60px;
+        height: 40px !important;
+        margin-top: -20px !important;
+        margin-left: -30px !important;
+
+        .vjs-icon-placeholder {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+
+    .vjs-error .vjs-error-display:before {
+        font-size: 24px;
+        width: 40px;
+        left: 50%;
+        margin-left: -20px;
+    }
+}
+
+.insert-blank-item {
+    border: none;
+    border-bottom: 1px solid #333333;
+    width: 80px;
+    outline: none;
+    margin: 0 10px;
+}
+
+// 上传
+.course__upload__line {
+    .el-form-item__content {
+        overflow: hidden;
+        height: 169px;
+    }
+
+    .course__upload__sec {
+        width: 300px;
+        height: 169px;
+        display: block;
+        border: 1px dashed $borderColor;
+        cursor: pointer;
+        background-color: #ffffff;
+        text-align: center;
+        line-height: 167px;
+        position: relative;
+        float: left;
+
+        &.logo {
+            width: 169px;
+        }
+
+        .course__cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .course__upload__plus {
+            font-size: 40px;
+            color: #C7C7C7;
+        }
+    }
+
+    .course__upload__tips {
+        color: $textTips;
+        font-size: 12px;
+        margin-left: 10px;
+        vertical-align: -145px;
+        line-height: 12px;
+    }
+}
+
+.vps__btn__line {
+    position: absolute;
+    bottom: 17px;
+    right: 50px;
+    overflow: hidden;
+}
+
+// 排序弹框样式
+.switch__content {
+    padding: 20px;
+
+    .switch__wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.organize__tree__text {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+// video.js
+.video-player {
+    * {
+        outline: none;
+    }
+}
+
+.video-js .vjs-mute-control {
+    outline: none;
+}
+
+.video-js .vjs-tech {
+    outline: none;
+}
+
+.video-js .vjs-volume-panel {
+    width: 6em !important;
+}
+
+.video-js .vjs-volume-panel .vjs-volume-control {
+    width: 3em !important;
+    height: .3em !important;
+    opacity: 1 !important;
+}
+
+.video-player {
+    &.vjs-custom-skin > .video-js .vjs-big-play-button {
+        width: 60px;
+        height: 40px !important;
+        margin-top: -20px !important;
+        margin-left: -30px !important;
+
+        .vjs-icon-placeholder {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+
+    .vjs-error .vjs-error-display:before {
+        font-size: 24px;
+        width: 40px;
+        left: 50%;
+        margin-left: -20px;
+    }
+}
+
+.form__page__btn {
+    padding-left: 140px;
+}
+
+.vjs-control-bar {
+    display: none !important;
+}
+
+.el-form-item__tips {
+    font-size: 12px;
+    color: $textTips;
+    margin-left: 8px;
+}
+
+.el-cascader .el-input .el-input__inner:focus, .el-cascader .el-input.is-focus .el-input__inner {
+    border-color: $primary;
+}

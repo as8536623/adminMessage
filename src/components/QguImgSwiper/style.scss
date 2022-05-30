@@ -1,0 +1,106 @@
+.qgu__img__swiper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    .qgu__img__swiper__shadow {
+        position: fixed;
+        background-color: rgba(0, 0, 0, .6);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .qgu__img__swiper__container {
+        width: 800px;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main__img {
+        height: 534px;
+        padding: 2px;
+        background-color: rgba(255, 255, 255, .5);
+        margin-bottom: 10px;
+    }
+    .main__img__i {
+        height: 530px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: .15s;
+    }
+    .main__preview__line {
+        text-align: center;
+    }
+    .main__preview {
+        width: 64px;
+        height: 52px;
+        padding: 2px;
+        background-color: rgba(255, 255, 255, .5);
+        display: inline-block;
+        margin-right: 5px;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            background-color: #ffffff;
+        }
+    }
+    .main__preview__i {
+        height: 48px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat
+    }
+    .close {
+        font-size: 40px;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        cursor: pointer;
+        &:hover {
+            opacity: .75;
+        }
+    }
+    .left {
+        height: 100px;
+        width: 30px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+        top: 50%;
+        margin-top: -100px;
+        background: #949494;
+        cursor: pointer;
+        font-size: 24px;
+        left: -30px;
+        color: #ffffff;
+        &:hover,
+        &.disabled {
+            opacity: .5;
+        }
+    }
+    .right {
+        height: 100px;
+        width: 30px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+        right: -30px;
+        top: 50%;
+        margin-top: -100px;
+        background: #949494;
+        cursor: pointer;
+        font-size: 24px;
+        &:hover,
+        &.disabled {
+            opacity: .5;
+        }
+    }
+}

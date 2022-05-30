@@ -1,0 +1,33 @@
+.custom__container{
+    padding: 0 20px 20px;
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+}
+.custom__dialog{
+    .el-radio{
+        margin-right: 22px;
+    }
+    .el-form .el-input--small{
+        width: 400px;
+    }
+    .el-radio.is-bordered.is-checked{
+        border-color: $btnPrimary;
+        color: $btnPrimary;
+    }
+    .custom__type__container{
+        margin-top: 20px;
+        span{
+            color: $textTips;
+        }
+    }
+    .custom__type__block{
+        width: 400px;
+        padding-top: 15px;
+        border: 1px solid $borderColor;
+        .el-form .el-input--small{
+            width: 300px;
+        }
+    }
+}

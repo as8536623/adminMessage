@@ -1,0 +1,36 @@
+.subject-course-list {
+    padding: 0 20px;
+    border: 1px solid #DDDDDD;
+    margin-top: 44px;
+
+    .sc-sec {
+        &:last-child {
+            .sc-sec__course:last-child {
+                .sc-sec__chapter:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    .course-list-header {
+        height: 67px;
+        line-height: 67px;
+        font-size: 24px;
+        font-weight: 400;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .sc-sec__chapter {
+        display: flex;
+        padding: 14px 0;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .sc-sec__cover {
+        width: 140px;
+        height: 88px;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+}

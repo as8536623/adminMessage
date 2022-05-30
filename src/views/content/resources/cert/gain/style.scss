@@ -1,0 +1,17 @@
+.cert__duration__edit {
+    position: relative;
+
+    .cert__append {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        color: $textSub;
+    }
+}
+
+.log__wrapper {
+    padding: 16px;
+    .btn__line {
+        margin-top: 16px;
+    }
+}

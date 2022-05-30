@@ -1,0 +1,61 @@
+.task__item {
+    height: 60px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+
+    .task__info, .task__opts {
+        display: flex;
+        align-items: center;
+    }
+
+    .task__opts {
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+
+    .task__icon {
+        width: 16px;
+        height: 16px;
+        font-size: 18px;
+        margin-left: 20px;
+        cursor: pointer;
+        color: $textSub;
+    }
+
+    .task__name {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 0;
+    }
+
+    .task__info {
+        flex-shrink: 0;
+        margin-right: 80px;
+    }
+
+    .task__score {
+        margin-left: 20px;
+    }
+
+    .task__type {
+        margin-right: 40px;
+    }
+
+    .task__type__icon {
+        margin-right: 20px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .optional {
+        color: $textTips;
+    }
+
+    .task__stones {
+        flex-shrink: 0;
+        margin-right: 50px;
+    }
+}

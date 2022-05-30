@@ -1,0 +1,21 @@
+.exercise__edit {
+    padding: 0;
+
+    .veln__steps{
+        text-align: center !important;
+        border-bottom: 1px solid $borderColor;
+    }
+    .tool-form-item{
+        padding: 20px;
+    }
+    .veln__tips {
+        margin-left: 10px;
+    }
+    .itembank__tag {
+        margin-right: 10px;
+    }
+    .exercise__tip{
+        color: $textTips;
+        font-size: 12px;
+    }
+}

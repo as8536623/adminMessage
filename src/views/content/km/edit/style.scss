@@ -1,0 +1,135 @@
+.form__page__btn {
+    margin-top: 12px;
+}
+
+.dlg__content {
+    padding: 20px;
+}
+
+.course__edit {
+    padding: 0 20px 20px;
+
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+}
+
+.course__upload__line {
+    .el-form-item__content {
+        overflow: hidden;
+        height: 169px;
+    }
+}
+
+.course__teacher__btn {
+    height: 32px;
+    padding: 0 5px;
+    min-width: 65px;
+}
+
+.course__teacher__tag {
+    height: 32px;
+    line-height: 30px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.km__edit {
+    padding: 20px;
+
+    .km__image__list {
+        margin-top: 20px;
+        font-size: 0;
+    }
+
+    .km__image__item {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        height: 150px;
+
+        &:hover {
+            .km__image__shadow {
+                display: block;
+            }
+        }
+    }
+
+    .km__image__delete {
+        color: $white;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        transition: .15s;
+
+        &:hover {
+            @include font_primary();
+        }
+    }
+
+    .km__image__shadow {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .km__image {
+        height: 150px;
+    }
+
+    .km__edit__voice {
+        position: absolute;
+        left: 320px;
+        top: 49px;
+    }
+}
+
+.qrCode__dialog .qrCode__dlg__wrapper {
+    padding: 20px;
+
+    .qrCode__content {
+        .qrCode {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 20px;
+        }
+    }
+
+    .input-with-select {
+        width: 300px;
+        margin-right: 10px;
+    }
+}
+
+.qrcode__sec {
+    padding: 20px;
+
+    .tape__qrcode__wrappe {
+        width: 140px;
+        display: inline-block;
+
+        &:first-child {
+            margin-right: 80px;
+        }
+    }
+
+    .tape__qrcode,
+    .tape__qrcode--preview {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 12px;
+    }
+
+    .tape__qrcode__text {
+        text-align: center;
+        font-size: 16px;
+    }
+}

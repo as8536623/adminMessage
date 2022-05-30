@@ -1,0 +1,46 @@
+.qgu__drag__row {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+}
+
+.qgu__drag__row--left,
+.qgu__drag__row--right {
+    overflow-x: auto;
+    flex-shrink: 0;
+}
+
+.qgu__drag__row--center {
+    cursor: col-resize;
+    position: relative;
+
+    .qgu__drag__row__split__icon {
+        position: absolute;
+        cursor: col-resize;
+        top: 200px;
+        color: #bbbbbb;
+        width: 10px;
+    }
+}
+
+.qgu__drag__row__split__line {
+    height: 100%;
+    background-color: #ededed;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    z-index: 1;
+}
+
+.qgu__drag__row__drag {
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+    padding: 0 2px;
+    position: relative;
+}
+
+.flex-auto {
+    flex: auto;
+}

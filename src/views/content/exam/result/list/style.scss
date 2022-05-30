@@ -1,0 +1,20 @@
+.result__container{
+    padding: 20px;
+    .paper__td__icon{
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        vertical-align: middle;
+    }
+    .paper__td__total{
+        @include font_primary();
+    }
+    .el-form .el-input--small {
+        width: 240px;
+    }
+}
+.arrange__dialog{
+    .el-dialog__body{
+        padding: 20px;
+    }
+}

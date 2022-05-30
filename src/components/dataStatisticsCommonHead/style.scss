@@ -1,0 +1,64 @@
+.stu__info__setting {
+    .headerBox {
+        width: 100%;
+        box-sizing: border-box;
+        display: inline-block;
+        ul {
+            overflow: hidden;
+            padding-left: 0;
+            margin-top: 0;
+            li {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                float: left;
+                width: 280px;
+                height: 120px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                &.bg0 {
+                    background: url("./assets/images/bg0.png") no-repeat center center;
+                    background-size: 100% 100%;
+                }
+                &.bg1 {
+                    background: url("./assets/images/bg1.png") no-repeat center center;
+                    background-size: 100% 100%;
+                }
+                &.bg2 {
+                    background: url("./assets/images/bg2.png") no-repeat center center;
+                    background-size: 100% 100%;
+                }
+                &.bg3 {
+                    background: url("./assets/images/bg3.png") no-repeat center center;
+                    background-size: 100% 100%;
+                }
+                &.bg4 {
+                    background: url("./assets/images/bg4.png") no-repeat center center;
+                    background-size: 100% 100%;
+                }
+                .contentBox {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 20px;
+                    color: #fff;
+                    .title {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                    }
+                    .data {
+                        font-size: 16px;
+                        width: 100%;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        .el-select {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.task__type {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 14px;
+    width: 182px;
+
+    &:hover {
+        background-color: #F9F9F9;
+    }
+
+    .task__icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 20px;
+    }
+
+    .task__add {
+        width: 24px;
+        height: 24px;
+        margin-left: auto;
+    }
+}

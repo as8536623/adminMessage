@@ -1,0 +1,47 @@
+.question__edit{
+    padding: 0 20px 20px;
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+    .form__page__btn {
+        margin-top: 12px;
+    }
+    .el-radio-group{
+        font-size: 14px;
+    }
+    .el__form-radio{
+        line-height: 32px;
+    }
+    .el-rate{
+        height: 32px;
+        line-height: 32px;
+    }
+    .el-rate__icon{
+        font-size: 18px;
+    }
+    .el-rate__icon.hover{
+        transform: scale(1);
+    }
+    .form__item__level{
+        [class*=" el-icon-"], [class^=el-icon-]{
+            line-height: 32px;
+        }
+    }
+    .el-rate__text{
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        vertical-align: top;
+        color: $textTips !important;
+    }
+    .exam__type{
+        margin-top: 20px;
+    }
+    .el-tag{
+        margin: 5px;
+        &:first-child{
+            margin-left: 0px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.tool-arrange-item{
+    //width: 1200px;
+    //margin: 0 auto;
+    .add__batch__btn{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+        font-size: 14px;
+        color: $textPrimary;
+        margin: 20px 0;
+    }
+    .more__batch__btn{
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .el-checkbox-group {
+        display: inline-block;
+    }
+}

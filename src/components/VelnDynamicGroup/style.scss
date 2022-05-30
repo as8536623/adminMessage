@@ -1,0 +1,124 @@
+.veln__dynamic__group{
+    position: relative;
+    width: 100%;
+    background: #F7F7F7;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 0;
+    .el-form-item--small .el-form-item__content{
+        line-height: 0;
+    }
+    .el-form-item--small.el-form-item:last-child{
+        margin-bottom: 0;
+    }
+    .veln__dynamic__section:last-child{
+        .el-form-item--small.el-form-item{
+            margin-bottom: 0;
+        }
+    }
+    .el-checkbox-group{
+        height: 32px;
+        line-height: 32px;
+    }
+    &:hover{
+        .veln__dynamic__del{
+            display: inline-block!important;
+            color: $textSub;
+            font-size: 14px;
+            &:hover{
+                color: $btnPrimary;
+            }
+        }
+    }
+    .el-input--small .el-input__inner{
+        height: 32px;
+        line-height: 32px;
+    }
+    .el-input__inner{
+        //border: 1px solid #DCDFE6;
+    }
+    .el-checkbox{
+        margin-right: 30px;
+    }
+    .el-tree {
+        .el-checkbox{
+            margin-right: 8px;
+        }
+    }
+    .veln-form-item{
+        margin-bottom: 0;
+    }
+    .el-form-item__label{
+        line-height: 32px;
+        padding-right: 8px;
+    }
+    .veln__dynamic__group--select{
+        .el-input--small{
+            width: 104px;
+        }
+    }
+    .veln__dynamic__group--range{
+        display: inline-block;
+        .el-input--small{
+            width: 70px;
+        }
+        span{
+            font-size: 14px;
+            color: #666666;
+            margin-left: 6px;
+        }
+        .veln__dynamic__group--line{
+            margin: 0 13.5px;
+        }
+        .veln__dynamic__group--time{
+            margin: 0 6px 0 0;
+        }
+    }
+    .veln__group__select{
+        position: relative;
+        border: 1px solid #DCDFE6;
+        border-radius: 2px;
+        min-height: 32px;
+        width: 300px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        padding: 4px 10px 0 10px;
+        box-sizing: border-box;
+        .el-tag.el-tag--info{
+            margin: 0 4px 4px 0;
+            color: #333333;
+        }
+        .el-tag.el-tag--info .el-tag__close{
+            color: #333333;
+            font-size: 14px;
+        }
+    }
+    .veln__dynamic__del{
+        position: absolute;
+        color: #666666;
+        font-size: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 51px;
+        cursor: pointer;
+        display: none;
+    }
+    .veln__dynamic__form__item{
+        display: inline-block;
+        .el-form-item__content{
+            display: inline-block;
+            margin-left: 0!important;
+            font-size: 0;
+        }
+    }
+    .veln__dynamic__icon{
+        position: absolute;
+        color: #999999;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+    }
+}

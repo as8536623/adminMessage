@@ -1,0 +1,22 @@
+.publish__info{
+    margin-bottom: 10px;
+    .publish__desc{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .publish__name{
+        flex: 1;
+        font-size: 16px;
+    }
+    .publish__tip{
+        color: $textTips;
+    }
+    .publish__active{
+        @include font_primary();
+    }
+}
+.publish-container{
+    padding: 20px;
+}

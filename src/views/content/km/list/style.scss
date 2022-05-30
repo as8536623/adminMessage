@@ -1,0 +1,90 @@
+.teacher__category {
+    .opt__text__btn {
+        margin-right: 20px;
+    }
+}
+
+.km__audit__form.el-form {
+    padding: 10px;
+    .el-input--small.el-textarea {
+        width: 350px;
+    }
+}.qrCode__dialog .qrCode__dlg__wrapper {
+     padding: 20px;
+
+     .qrCode__content {
+         .qrCode {
+             width: 300px;
+             height: 300px;
+             margin: 0 auto;
+         }
+     }
+
+     .input-with-select {
+         width: 300px;
+         margin-right: 10px;
+     }
+ }
+
+// 二维码
+.qrCode__dialog {
+    .dialog__form__container {
+        padding: 12px 25px 0 45px;
+        height: 588px;
+        box-sizing: border-box;
+    }
+
+    .qrCode__content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 300px;
+    }
+
+    .qrCode__pic {
+        width: 354px;
+        height: 100%;
+        margin-right: 25px;
+    }
+
+    .qrCode {
+        width: 84px;
+        height: 84px;
+    }
+
+    .input-with-select {
+        width: 266px;
+        margin-right: 10px;
+    }
+
+    .el-button.el-button--small {
+        padding: 7px 10px;
+    }
+
+    .el-input .el-input__inner {
+        border-radius: 0;
+    }
+
+    .el-input__inner:hover,
+    .el-input__inner:focus {
+        @include border-primary();
+    }
+
+    .address {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .el-input-group__append {
+        cursor: pointer;
+        padding: 0 18px;
+        border-radius: 0px;
+        @include font_primary();
+        border-left: none;
+
+        &:hover {
+            @include btn_primary_color();
+        }
+    }
+}

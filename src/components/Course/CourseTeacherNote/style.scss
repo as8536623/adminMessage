@@ -1,0 +1,52 @@
+.course__teacher__note {
+    padding: 22px 0 40px;
+
+    .note__btn__line {
+        margin: 10px 0 0;
+        text-align: right;
+    }
+
+    .note__item {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px dashed $borderColor;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .note__avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+
+    .note__user {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .note__text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .note__time {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        color: $textTips;
+    }
+
+    .note__page {
+
+    }
+
+    .note__content {
+        flex: 1;
+    }
+}

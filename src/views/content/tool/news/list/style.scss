@@ -1,0 +1,11 @@
+.news__list {
+    .news__description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .opt__link {
+        margin-right: 8px;
+    }
+}

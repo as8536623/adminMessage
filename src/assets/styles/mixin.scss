@@ -1,0 +1,429 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin scrollBar {
+    &::-webkit-scrollbar-track-piece {
+        background: #d3dce6;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #99a9bf;
+        border-radius: 20px;
+    }
+}
+
+@mixin relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin pct($pct) {
+    width: #{$pct};
+    position: relative;
+    margin: 0 auto;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+    $width: $width/2;
+    $color-border-style: $height solid $color;
+    $transparent-border-style: $width solid transparent;
+    height: 0;
+    width: 0;
+
+    @if $direction==up {
+        border-bottom: $color-border-style;
+        border-left: $transparent-border-style;
+        border-right: $transparent-border-style;
+    }
+
+    @else if $direction==right {
+        border-left: $color-border-style;
+        border-top: $transparent-border-style;
+        border-bottom: $transparent-border-style;
+    }
+
+    @else if $direction==down {
+        border-top: $color-border-style;
+        border-left: $transparent-border-style;
+        border-right: $transparent-border-style;
+    }
+
+    @else if $direction==left {
+        border-right: $color-border-style;
+        border-top: $transparent-border-style;
+        border-bottom: $transparent-border-style;
+    }
+}
+
+@mixin font_primary($important: false) { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    @if $important {
+        color: $primary !important;
+        [data-theme="bgk"] & {
+            color: $primary-bgk !important;
+        }
+        [data-theme="bgh"] & {
+            color: $primary-bgk !important;
+        }
+    }
+
+    @else {
+        color: $primary;
+        [data-theme="bgk"] & {
+            color: $primary-bgk;
+        }
+        [data-theme="bgh"] & {
+            color: $primary-bgk;
+        }
+    }
+}
+
+@mixin bg_primary() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $primary;
+    [data-theme="bgk"] & {
+        background-color: $primary-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $primary-bgk;
+    }
+}
+
+@mixin menu_active() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $primary !important;
+    [data-theme="bgk"] & {
+        color: $primary-bgk !important;
+    }
+    [data-theme="bgh"] & {
+        color: $primary-bgk !important;
+    }
+}
+
+@mixin menu_active_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $primary !important;
+    [data-theme="bgk"] & {
+        background-color: $primary-bgk !important;
+    }
+    [data-theme="bgh"] & {
+        background-color: $primary-bgk !important;
+    }
+}
+
+@mixin bg_assistant() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $assistant;
+    [data-theme="bgk"] & {
+        background-color: $assistant-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $assistant-bgk;
+    }
+}
+
+@mixin bg_weak() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $weakPrimary;
+    [data-theme="bgk"] & {
+        background-color: $weakPrimary-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $weakPrimary-bgk;
+    }
+}
+
+@mixin border_primary() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $primary;
+    [data-theme="bgk"] & {
+        border-color: $primary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $primary-bgk;
+    }
+}
+
+@mixin border_weak() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $weakPrimary;
+    [data-theme="bgk"] & {
+        border-color: $weakPrimary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $weakPrimary-bgk;
+    }
+}
+
+@mixin border_top_primary() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-top-color: $primary;
+    [data-theme="bgk"] & {
+        border-top-color: $primary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-top-color: $primary-bgk;
+    }
+}
+
+@mixin border_right_primary() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-right-color: $primary;
+    [data-theme="bgk"] & {
+        border-right-color: $primary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-right-color: $primary-bgk;
+    }
+}
+
+@mixin border_bottom_primary() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-bottom-color: $primary;
+    [data-theme="bgk"] & {
+        border-bottom-color: $primary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-bottom-color: $primary-bgk;
+    }
+}
+
+@mixin border_radius() { /*通过该函数设置border-radius，后期方便统一管理；*/
+    border-radius: $btnRadius;
+    [data-theme="bgk"] & {
+        border-radius: $btnRadius-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-radius: $btnRadius-bgk;
+    }
+}
+
+//btn
+@mixin btn_default_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnDefaultBg;
+    [data-theme="bgk"] & {
+        background-color: $btnDefaultBg-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnDefaultBg-bgk;
+    }
+}
+
+@mixin btn_default_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnDefaultBorder;
+    [data-theme="bgk"] & {
+        border-color: $btnDefaultBorder-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnDefaultBorder-bgk;
+    }
+}
+
+@mixin btn_default_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $btnDefaultText;
+    [data-theme="bgk"] & {
+        color: $btnDefaultText-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $btnDefaultText-bgk;
+    }
+}
+
+@mixin btn_default_hover_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnDefaultHoverBg;
+    [data-theme="bgk"] & {
+        background-color: $btnDefaultHoverBg-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnDefaultHoverBg-bgk;
+    }
+}
+
+@mixin btn_default_hover_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnDefaultHoverBorder;
+    [data-theme="bgk"] & {
+        border-color: $btnDefaultHoverBorder-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnDefaultHoverBorder-bgk;
+    }
+}
+
+@mixin btn_default_hover_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $btnDefaultHoverText;
+    [data-theme="bgk"] & {
+        color: $btnDefaultHoverText-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $btnDefaultHoverText-bgk;
+    }
+}
+
+@mixin btn_default_active_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnDefaultActiveBg;
+    [data-theme="bgk"] & {
+        background-color: $btnDefaultActiveBg-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnDefaultActiveBg-bgk;
+    }
+}
+
+@mixin btn_default_active_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnDefaultActiveBorder;
+    [data-theme="bgk"] & {
+        border-color: $btnDefaultActiveBorder-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnDefaultActiveBorder-bgk;
+    }
+}
+
+@mixin btn_default_active_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $btnDefaultActiveText;
+    [data-theme="bgk"] & {
+        color: $btnDefaultActiveText-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $btnDefaultActiveText-bgk;
+    }
+}
+
+@mixin btn_primary_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnPrimary;
+    [data-theme="bgk"] & {
+        background-color: $btnPrimary-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnPrimary-bgk;
+    }
+}
+
+@mixin btn_primary_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnPrimary;
+    [data-theme="bgk"] & {
+        border-color: $btnPrimary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnPrimary-bgk;
+    }
+}
+
+@mixin btn_primary_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $white;
+    [data-theme="bgk"] & {
+        color: $white-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $white-bgk;
+    }
+}
+
+@mixin btn_primary_plain_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnPrimaryAssistant;
+    [data-theme="bgk"] & {
+        background-color: $btnPrimaryAssistant-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnPrimaryAssistant-bgk;
+    }
+}
+
+@mixin btn_primary_plain_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnPrimary;
+    [data-theme="bgk"] & {
+        border-color: $btnPrimary-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnPrimary-bgk;
+    }
+}
+
+@mixin btn_primary_plain_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $btnPrimary;
+    [data-theme="bgk"] & {
+        color: $btnPrimary-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $btnPrimary-bgk;
+    }
+}
+
+@mixin btn_primary_hover_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnPrimaryHover;
+    [data-theme="bgk"] & {
+        background-color: $btnPrimaryHover-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnPrimaryHover-bgk;
+    }
+}
+
+@mixin btn_primary_hover_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnPrimaryHover;
+    [data-theme="bgk"] & {
+        border-color: $btnPrimaryHover-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnPrimaryHover-bgk;
+    }
+}
+
+@mixin btn_primary_hover_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $btnPrimaryHover;
+    [data-theme="bgk"] & {
+        color: $btnPrimaryHover-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $btnPrimaryHover-bgk;
+    }
+}
+
+@mixin btn_primary_active_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $btnPrimaryActive;
+    [data-theme="bgk"] & {
+        background-color: $btnPrimaryActive-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $btnPrimaryActive-bgk;
+    }
+}
+
+@mixin btn_primary_active_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $btnPrimaryActive;
+    [data-theme="bgk"] & {
+        border-color: $btnPrimaryActive-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $btnPrimaryActive-bgk;
+    }
+}
+
+@mixin btn_primary_active_color() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    color: $btnPrimaryActive;
+    [data-theme="bgk"] & {
+        color: $btnPrimaryActive-bgk;
+    }
+    [data-theme="bgh"] & {
+        color: $btnPrimaryActive-bgk;
+    }
+}
+
+@mixin tag_bg() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    background-color: $tagBg;
+    [data-theme="bgk"] & {
+        background-color: $tagBg-bgk;
+    }
+    [data-theme="bgh"] & {
+        background-color: $tagBg-bgk;
+    }
+}
+
+@mixin tag_border() { /*通过该函数设置字体颜色，后期方便统一管理；*/
+    border-color: $tagBorder;
+    [data-theme="bgk"] & {
+        border-color: $tagBorder-bgk;
+    }
+    [data-theme="bgh"] & {
+        border-color: $tagBorder-bgk;
+    }
+}

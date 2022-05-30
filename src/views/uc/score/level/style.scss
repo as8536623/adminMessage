@@ -1,0 +1,100 @@
+.level--icon {
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    background: #DCAF74;
+    border-radius: 3px;
+    color: $white;
+}
+
+.score__rule__header {
+    background-color: #F7F7F7;
+    font-size: 0;
+
+    .score__table__th {
+        height: 43px;
+        line-height: 43px;
+        padding: 0 10px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+
+        &.level {
+            width: 10%;
+        }
+
+        &.name {
+            width: 40%;
+        }
+
+        &.min,
+        &.max {
+            width: 20%;
+        }
+
+        &.opt {
+            width: 10%;
+        }
+    }
+}
+
+.score__rule__line {
+    font-size: 0;
+
+    .score__table__td {
+        font-size: 14px;
+        display: inline-block;
+        padding: 10px 0;
+        vertical-align: middle;
+
+        &.level {
+            width: 10%;
+            padding: 0 10px;
+        }
+
+        &.name {
+            width: 40%;
+        }
+
+        &.min,
+        &.max {
+            width: 20%;
+        }
+
+        &.opt {
+            width: 10%;
+            padding: 0 10px;
+        }
+    }
+
+    .score__name__npt {
+        width: 340px;
+    }
+}
+
+.score__rule {
+    .el-form-item--small.el-form-item {
+        margin: 0;
+    }
+
+    .score__rule__btns {
+        margin-top: 40px;
+    }
+
+    .rule__opt__icon {
+        font-size: 16px;
+        color: $textSub;
+        cursor: pointer;
+
+        &:hover {
+            @include font_primary();
+        }
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "webJsMap": {
+        "dev": "****",
+        "server167": "****",
+        "server168": "****",
+        "serverProd": "****"
+    },
+    "webServiceMap": {
+        "dev": "****",
+        "server167": "****",
+        "server168": "****",
+        "serverProd": "****"
+    },
+    "ssh": {
+        "server168": {
+            "host": "192.168.0.168",
+            "port": "22",
+            "username": "****",
+            "password": "****"
+        },
+        "server167": {
+            "host": "192.168.0.167",
+            "port": "22",
+            "username": "****",
+            "password": "****"
+        },
+        "yufa": {
+            "host": "139.224.253.154",
+            "port": "22",
+            "username": "****",
+            "password": "****"
+        },
+        "prod": {
+            "host": "106.15.73.210",
+            "port": "22",
+            "username": "****",
+            "password": "****"
+        }
+    }
+}

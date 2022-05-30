@@ -1,0 +1,87 @@
+.app__container .juri--top {
+    background-color: #ffffff;
+    margin-bottom: 16px;
+
+    .form__section {
+        .form__section__title {
+            height: 48.5px;
+            line-height: 48.5px;
+            padding: 0 20px;
+            font-size: 14px;
+        }
+    }
+
+    .jury__manager {
+        padding: 14.5px 20px 20px;
+        min-height: 88.5px;
+        display: flex;
+        flex-direction: row;
+
+        .el-button--text {
+            padding: 0;
+        }
+
+        .jury__manager__select {
+            flex: 1;
+            line-height: 28px;
+        }
+    }
+
+    .juri__manager__title {
+        line-height: 28px;
+    }
+}
+
+.juri--bottom {
+    background: #ffffff;
+
+    .juri--bottom__title {
+        font-size: 14px;
+        color: #333333;
+        line-height: 21px;
+        height: 21px;
+        font-weight: bold;
+        margin-bottom: 36px;
+    }
+    .juri--bottom__filter{
+        .el-form-item--small.el-form-item{
+            padding-top: 0;
+        }
+    }
+}
+
+.juri__dlg {
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.jury__search__form.el-form .el-input--small {
+    width: 160px;
+}
+
+.juri__dlg__query {
+    margin-bottom: 20px;
+}
+
+.juri__query__roles {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+}
+
+.jury__select {
+    margin-top: 20px;
+}
+
+.juri__user__btns {
+    padding-right: 15px;
+    margin-top: 18px;
+    .el-button {
+        min-width: 65px;
+    }
+}
+
+.juri__role__select.el-select .el-input__inner {
+    width: 240px;
+}

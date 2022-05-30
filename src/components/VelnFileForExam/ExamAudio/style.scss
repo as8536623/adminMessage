@@ -1,0 +1,22 @@
+.exam__audio__block{
+    .exam__audio__item{
+        margin-top: -10px;
+    }
+    .exam__audio__item{
+        position: relative;
+        width: 123px;
+        height: 40px;
+        border-radius: 50px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 18px;
+    }
+    .player__duration {
+        font-size: 14px;
+        color: $textTips;
+        line-height: 40px;
+        margin-left: 17px;
+    }
+}

@@ -1,0 +1,35 @@
+.organize__wrapper {
+    padding: 20px;
+
+    .el-tree {
+        &>.el-tree-node {
+            &>.el-tree-node__content {
+                .tree__option {
+                    .el-button:not(.add) {
+                        display: none;
+                    }
+                    .el-button.auth__icon {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .tree__option {
+        margin-left: 40px;
+    }
+
+    .tree__option {
+        display: none;
+        vertical-align: 1px;
+    }
+
+    .el-tree-node__content {
+        &:hover {
+            .tree__option {
+                display: inline;
+            }
+        }
+    }
+}

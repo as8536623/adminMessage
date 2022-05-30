@@ -1,0 +1,35 @@
+.violation__dialog{
+    .el-form{
+        padding: 20px !important;
+    }
+    .el-radio{
+        line-height: 30px;
+    }
+    .el-form .el-input--small.el-textarea{
+        width: 400px;
+    }
+    .el-form .el-input--small {
+        width: 240px;
+    }
+}
+.item__excel__info {
+    margin-bottom: 10px;
+    width: 99%;
+    font-size: 12px;
+}
+.monitor-container{
+    padding: 0 20px 20px;
+    .monitor__nav{
+        border-bottom: 1px solid $borderColor;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 20px 0;
+    }
+    .exam__status{
+        color: $examTextActive;
+        margin-left: 10px;
+    }
+    .el-form .el-input--small{
+        width: 240px;
+    }
+}

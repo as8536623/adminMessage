@@ -1,0 +1,83 @@
+.course__judge__component {
+    padding: 22px 0 40px;
+}
+
+.course__judge__item {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px dashed $borderColor;
+
+    &:last-child {
+        border: none;
+    }
+
+    .judge__avatar {
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .judge__content {
+        flex: 1;
+        padding-bottom: 20px;
+    }
+
+    .judge__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .teacher__name {
+        font-weight: bold;
+    }
+
+    .judge__text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .judge__time {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        color: $textTips;
+    }
+
+    .judge__reply {
+        padding-top: 6px;
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .reply__content {
+        padding: 10px 20px;
+        background-color: #F8F8F8;
+        border-radius: 0 8px 8px 8px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 18px;
+            height: 7px;
+            background: url("./images/angle.png") transparent left bottom no-repeat;
+            background-size: contain;
+            top: -7px;
+            left: 0;
+        }
+    }
+
+    .reply__tip {
+        color: $textTips;
+    }
+
+    .reply__text {
+        color: $textSub;
+    }
+}

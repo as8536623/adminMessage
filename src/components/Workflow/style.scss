@@ -1,0 +1,367 @@
+@import 'variable';
+@import 'common';
+
+.l-workflow {
+    width: 100%;
+    min-height: 100%;
+    background-color: $bg;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .node__sec {
+        padding: 0 50px;
+        position: relative;
+
+        &.arrow {
+            &::before {
+                content: "";
+                position: absolute;
+                top: -12px;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                width: 0;
+                height: 4px;
+                border-style: solid;
+                border-width: 8px 6px 4px;
+                border-color:  $lineColor transparent transparent;
+                background:  $arrowBg;
+            }
+        }
+    }
+
+    // 卡片统一样式
+    .wf__card {
+        width: 240px;
+        background:  $white;
+        position: relative;
+
+        &:hover {
+            .node--close__wrapper {
+                display: block;
+            }
+        }
+    }
+
+    .node--close__wrapper {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        display: none;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    .node--close {
+        width: 10px;
+        height: 10px;
+    }
+
+    .wf__card--header {
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #ECECEC;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wf__btn {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        font-size:  $fsSmall;
+        color:  $btnPrimary;
+        background-color:  $white;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .wf__btn--text {
+        background-color:  $white;
+        border: 1px solid $white;
+        outline: none;
+        color:  $btnPrimary;
+        cursor: pointer;
+
+        &.wf__card__opt {
+            font-size:  $fsSmall;
+        }
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    .wf__card--content {
+        padding: 14px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wf__card__paragraph {
+        margin-right: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .wf__card__arrow {
+        width: 12px;
+        height: 12px;
+        color:  $btnDisabled;
+        align-self: center;
+    }
+
+    .wf__add__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .wf__add__node {
+        padding: 20px 0 32px;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 2px;
+            background:  $lineColor;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+    }
+
+    .wf__add__icon {
+        position: relative;
+        z-index: 10;
+        background-color:  $bg;
+        cursor: pointer;
+    }
+
+    // 条件分支
+    .branch__sec {
+        display: flex;
+        min-height: 180px;
+        height: auto;
+        position: relative;
+        margin-top: 15px;
+        background-color:  $bg;
+    }
+
+    .branch__item {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color:  $lineColor;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color:  $lineColor;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    .branch__item__line--center {
+        display: block;
+        height: 100%;
+        width: 2px;
+        background-color:  $lineColor;
+        position: absolute;
+        top: 0;
+    }
+
+    .branch__item__border--top--left {
+        width: 50%;
+        height: 2px;
+        background-color:  $bg;
+        position: absolute;
+        top: 0;
+        left: -1px;
+        z-index: 2;
+    }
+
+    .branch__item__border--bottom--left {
+        width: 50%;
+        height: 2px;
+        background-color:  $bg;
+        position: absolute;
+        bottom: 0;
+        left: -1px;
+        z-index: 2;
+    }
+
+    .branch__item__border--top--right {
+        width: 50%;
+        height: 2px;
+        background-color:  $bg;
+        position: absolute;
+        top: 0;
+        right: -1px;
+        z-index: 2;
+    }
+
+    .branch__item__border--bottom--right {
+        width: 50%;
+        height: 2px;
+        background-color:  $bg;
+        position: absolute;
+        bottom: 0;
+        right: -1px;
+        z-index: 2;
+    }
+
+    .branch__btn--add {
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+    }
+
+    .condition__sec {
+        width: 340px;
+        padding: 30px 50px 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .condition__card {
+        background-color:  $white;
+        padding: 14px 19px;
+        position: relative;
+
+        &:hover {
+            .node--close__wrapper {
+                display: block;
+            }
+        }
+    }
+
+    .condition__header {
+        height: 16px;
+        line-height: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .condition__title {
+        font-size: 14px;
+        @include font_primary();
+    }
+
+    .condition__index {
+        font-size: 12px;
+        color:  $btnDisabled;
+    }
+
+    .condition__content {
+        font-size:  $fsPrimary;
+        line-height: 1.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    // 结束节点
+    .wf__finish__circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color:  $lineColor;
+        margin: 0 auto 10px;
+    }
+}
+
+.workflow__setting {
+    padding: 0 10px;
+}
+
+.workflow__setting__form {
+    padding: 0 15px;
+}
+
+.wf__add__btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.wf__add__btn__item{
+    cursor: pointer;
+    flex: none;
+    text-align: center;
+}
+.wf__node__add__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    &.branch{
+        color: #15bc83;
+    }
+    &.cc{
+        color: #198CFF;
+    }
+    &.audit{
+        color: #FF6600;
+    }
+}
+.wf__add__item__wrapper{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    &:hover{
+        background-color: #3296fa;
+        .wf__node__add__icon{
+            color:  $white;
+        }
+    }
+}
+.wf__add__btn__text{
+    margin-top: 10px;
+    color:  $textPrimary;
+}
+
+.wf__icon--audit{
+    color: #FF6600;
+}
+.wf__icon--cc{
+    color: #198CFF;
+}

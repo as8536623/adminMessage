@@ -1,0 +1,64 @@
+.teacher-container {
+    padding: 0 20px 20px;
+
+    .teacher--edit {
+        color: $primary;
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    .course__upload__sec {
+        width: 180px;
+        height: 180px;
+        display: block;
+        border: 1px solid $borderColor;
+        cursor: pointer;
+        background-color: #ffffff;
+        text-align: center;
+        line-height: 167px;
+        position: relative;
+        float: left;
+
+        .course__cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .course__upload__plus {
+            font-size: 40px;
+            color: #C7C7C7;
+        }
+    }
+
+    .course__upload__tips {
+        color: $textTips;
+        font-size: 12px;
+        vertical-align: 2px;
+        margin-left: 10px;
+        vertical-align: -145px;
+        line-height: 12px;
+    }
+
+    .course__upload__line {
+        .el-form-item__content {
+            overflow: hidden;
+            height: 169px;
+        }
+    }
+}
+
+.vps__btn__line {
+    position: absolute;
+    bottom: 17px;
+    right: 50px;
+    overflow: hidden;
+}
+

@@ -1,0 +1,127 @@
+.group__member {
+    background-color: #ffffff;
+    min-height: 100%;
+    padding: 0 20px;
+
+    .veln__steps {
+        border-bottom: 1px solid $borderColor;
+    }
+}
+
+.form__page__btn {
+    margin-top: 40px;
+}
+
+.btn__line {
+    margin-bottom: 10px;
+}
+
+.veln__dynamic__select {
+    height: 42px;
+    line-height: 42px;
+    background: #F7F7F7;
+    font-size: 0;
+    color: #666666;
+
+    .veln__dynamic__select__btn {
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        margin-left: 120px;
+        cursor: pointer;
+    }
+
+    .select__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        left: 0;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.20);
+        border-radius: 100%;
+    }
+
+    .select__btn {
+        padding-left: 24px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.veln__dynamic__have__select {
+    position: relative;
+    line-height: 24px;
+    background: #F7F7F7;
+    margin-bottom: 10px;
+    padding: 9px 20px;
+
+    .select__item {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        .veln__ynamic__desc {
+            flex: 1;
+            padding-right: 120px;
+            word-break: break-all;
+        }
+    }
+
+    &:hover {
+        .select__right__icon {
+            display: inline-block !important;
+        }
+    }
+
+    .select__label {
+        display: inline-block;
+        width: 100px;
+        padding-left: 10px;
+        font-weight: normal;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            display: inline-block;
+            content: '';
+            width: 10px;
+            height: 10px;
+            left: -8px;
+            top: 7px;
+            @include bg_primary();
+            margin-right: 8px;
+        }
+    }
+
+    .select__right__icon {
+        position: absolute;
+        right: 31px;
+        top: 0;
+    }
+
+    .veln__ynamic__icon {
+        cursor: pointer;
+        margin-left: 31.7px;
+        color: $textSub;
+        font-size: 14px;
+
+        &:hover {
+            color: $btnPrimary;
+        }
+    }
+}
+
+.el-tabs__nav-wrap::after {
+    height: 1px;
+}
+
+.el-tabs__active-bar {
+    height: 1px;
+}
+
+.veln__table {
+    line-height: 0;
+}

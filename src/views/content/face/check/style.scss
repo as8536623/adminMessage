@@ -1,0 +1,416 @@
+.set__dialog {
+    .el-form-item {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .el-checkbox {
+        width: 80px;
+    }
+
+    .el-checkbox__label {
+        padding-left: 10px;
+    }
+
+    .el-form-item__error {
+        padding-left: 100px;
+    }
+
+    .face__set {
+        display: inline-block;
+
+        .el-input--small {
+            width: 80px;
+        }
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+.sign__stu__desc {
+    color: $textSub;
+}
+
+.stone__dialog {
+    .el-form .el-input--small.el-textarea {
+        width: 300px;
+    }
+}
+
+.chart-container {
+    .chart__title {
+        color: $textPrimary;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .data__total {
+        border: 1px solid $borderColor;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .data__list {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .data__item {
+        flex: 1;
+        display: flex;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .data__desc {
+        color: $textSub;
+        font-size: 14px;
+    }
+
+    .data__name {
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: $textPrimary;
+    }
+
+    .data__info {
+        color: $textTips;
+    }
+
+    .data__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .statistics__icon {
+        font-size: 50px;
+    }
+
+    .data__desc {
+        padding-left: 10px;
+    }
+
+    .rate__block {
+        border: 1px solid $borderColor;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .rate__chart {
+        height: 450px;
+    }
+
+    .interaction__block {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .interaction__item {
+        flex: 1;
+        border: 1px solid $borderColor;
+        padding: 20px;
+
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    .interaction__chart {
+        height: 300px;
+    }
+
+    .train__block {
+        display: flex;
+    }
+
+    .train__item {
+        border: 1px solid $borderColor;
+        padding: 20px;
+        flex: 1;
+        height: 450px;
+        display: flex;
+
+        span {
+            flex-shrink: 0;
+        }
+
+        &:first-child {
+            margin-right: 20px;
+        }
+
+        .train__chart {
+            flex: 1;
+        }
+    }
+
+    .rank__item {
+        flex: 1;
+        border: 1px solid $borderColor;
+    }
+
+    .tab__list {
+        padding: 0 30px 0 20px;
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+        color: $textPrimary;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .rank__title {
+        font-weight: 600;
+    }
+
+    .rank__btn {
+        float: right;
+
+        span {
+            display: inline-block;
+            height: 24px;
+            line-height: 26px;
+            text-align: center;
+            border-radius: 100px;
+            padding: 0 10px;
+            font-size: 13px;
+            cursor: pointer;
+            margin-left: 26px;
+        }
+    }
+
+    .activeBtn {
+        color: $white;
+        background: $rankBtn;
+    }
+
+    .range__item {
+        padding: 0 30px 0 38px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+        line-height: 60px;
+        color: $textSub;
+        font-size: 14px;
+    }
+
+    .el-tabs {
+        width: 100%;
+    }
+
+    .order__item {
+        width: 30%;
+    }
+
+    .order {
+        font-size: 16px;
+        color: $rankDefault;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .first {
+        font-size: 14px;
+        background: $rankFirst;
+        color: $white;
+    }
+
+    .second {
+        font-size: 14px;
+        background: $rankSecond;
+        color: $white;
+    }
+
+    .third {
+        font-size: 14px;
+        background: $rankThird;
+        color: $white;
+    }
+
+    .image {
+        position: relative;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+    }
+
+    .head__portrait {
+        margin: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .username {
+        width: 40%;
+    }
+
+    .number {
+        width: 30%;
+        text-align: right;
+    }
+
+    .no__data {
+        padding: 20px;
+        text-align: center;
+        color: $textTips;
+    }
+}
+
+.check-section {
+    position: relative;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    margin: 0 30px 16px 30px;
+
+    .swiper-wrapper {
+        height: 40px;
+        line-height: 40px;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    .check__item {
+        cursor: pointer;
+        width: 188px;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-right: 1px solid #CCCCCC;
+        padding: 0 10px;
+    }
+
+    .swiper-slide {
+        width: 188px;
+        height: 39px;
+    }
+
+    .swiper-button-prev {
+        left: -30px;
+        width: 24px;
+        height: 38px;
+        margin-top: -19px;
+        background-image: url("./images/ico_right.png");
+        background-image: image-set(url("./images/ico_right.png") 1x, url("./images/ico_right@2x.png") 2x);
+        background-image: -webkit-image-set(url("./images/ico_right.png") 1x, url("./images/ico_right@2x.png") 2x);
+        background-size: contain;
+        transform: rotate(180deg);
+
+        &:hover, &:focus {
+            background-image: url("./images/ico_left.png");
+            background-image: image-set(url("./images/ico_left.png") 1x, url("./images/ico_left@2x.png") 2x);
+            background-image: -webkit-image-set(url("./images/ico_left.png") 1x, url("./images/ico_left@2x.png") 2x);
+            transform: rotate(0deg);
+        }
+    }
+
+    .swiper-button-next {
+        right: -30px;
+        width: 24px;
+        height: 38px;
+        margin-top: -19px;
+        background-image: url("./images/ico_right.png");
+        background-image: image-set(url("./images/ico_right.png") 1x, url("./images/ico_right@2x.png") 2x);
+        background-image: -webkit-image-set(url("./images/ico_right.png") 1x, url("./images/ico_right@2x.png") 2x);
+        background-size: contain;
+
+        &:hover, &:focus {
+            background-image: url("./images/ico_left.png");
+            background-image: image-set(url("./images/ico_left.png") 1x, url("./images/ico_left@2x.png") 2x);
+            background-image: -webkit-image-set(url("./images/ico_left.png") 1x, url("./images/ico_left@2x.png") 2x);
+            transform: rotate(180deg);
+        }
+    }
+
+    .active {
+        color: $btnPrimary;
+    }
+}
+
+.swiper-container {
+    position: relative;
+    height: 40px;
+    overflow: visible;
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 40px;
+        background-color: $white;
+        left: -31px;
+        z-index: 2;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 40px;
+        background-color: $white;
+        right: -31px;
+        z-index: 2;
+    }
+}
+
+.veln__width {
+    overflow: hidden;
+}
+
+// 能量石
+.stone-container {
+    .el-form-item__label {
+        &:before {
+            width: 0;
+            content: none;
+        }
+    }
+
+    .el-form-item:last-child {
+        margin-right: 0;
+    }
+}
+
+// 能量石详情
+.stone-detail-container {
+    padding: 20px;
+
+    .el-form-item__label {
+        &:before {
+            width: 0;
+            content: none;
+        }
+    }
+
+    .el-form--inline .el-form-item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.stone-block {
+    .el-input--small {
+        width: 100px;
+    }
+    .stone-form-item {
+        margin-bottom: 0;
+    }
+}
+.group__dialog {
+    .el-dialog__body {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,237 @@
+.questionnaire {
+    height: 100%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+
+    .questionnaire__header {
+        height: 60px;
+        background: #20222A;
+        padding: 17px 19px;
+    }
+
+    .questionnaire__title {
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 26px;
+        font-weight: bold;
+    }
+
+    .questionnaire__main {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        position: relative;
+        background: #F3F6F9;
+        overflow: hidden;
+    }
+
+    .questionnaire__category {
+        width: 180px;
+        background: #F8F8F8;
+    }
+
+    .questionnaire__canvas {
+        flex: 1;
+        background: #F3F6F9;
+        padding: 42px 30px;
+        overflow-y: auto;
+    }
+
+    .questionnaire__opt {
+        width: 0px;
+        background: $white;
+        padding: 30px 0;
+        transition: all .15s ease-in-out;
+        overflow: hidden;
+
+        &.show {
+            width: 260px;
+        }
+    }
+
+    .qnt__btn {
+        padding: 5px 15px;
+
+        &:last-child {
+            margin-right: 10px;
+        }
+    }
+
+    .qnt__header {
+        padding: 45px;
+        background-color: $white;
+        margin-bottom: 10px;
+    }
+
+    .qnt__title {
+        margin-bottom: 12px;
+
+        .el-input__inner {
+            text-align: center;
+            font-size: 20px;
+            color: $textPrimary;
+            padding: 0;
+        }
+    }
+
+    .qnt__description {
+        .el-textarea__inner {
+            color: $textSub;
+            font-size: 13px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+    .qnt__end {
+        .el-textarea__inner {
+            color: $textPrimary;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+    .qnt__footer {
+        padding: 28px;
+        background: $white;
+    }
+
+    .questionnaire__category {
+        padding: 30px 0 30px 19px;
+    }
+
+    .qnt__item__empty {
+        height: 220px;
+        margin-bottom: 10px;
+        list-style: none;
+        background-color: #f4f6f9;
+        border: 1px dotted #00B38A;
+        border-radius: 5px;
+    }
+
+    .qnt__empty__center {
+        width: 328px;
+        height: 80px;
+        margin: 70px auto;
+    }
+
+    .qnt__empty__item {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .qnt__empty__icon {
+        font-size: 40px;
+        color: #00B38A;
+    }
+
+    .qnt__empty__text {
+        font-size: 16px;
+        color: $textPrimary;
+        margin-top: 18px;
+    }
+
+    .qnt__empty__link {
+        font-size: 16px;
+        color: $textTips;
+        margin-left: 76px;
+        margin-right: 52px;
+        display: inline-block;
+        line-height: 80px;
+        vertical-align: 27px;
+    }
+
+    // component
+    .qnt__input .el-input__inner,
+    .qnt__textarea .el-textarea__inner {
+        border: none;
+        resize: none;
+        color: $textPrimary;
+    }
+
+    .qnt__textarea .el-textarea__inner:focus {
+        box-shadow: 0 0 0 2px rgba(37, 183, 100, .2);
+    }
+
+    .qnt__list {
+        padding: 0;
+        margin: 0;
+    }
+
+    .qnt__item {
+        list-style: none;
+        margin-bottom: 10px;
+        background-color: $white;
+        padding: 20px 40px 30px;
+        position: relative;
+        border: 1px solid $white;
+        transition: all .15s ease-in;
+
+        &.active {
+            border: 1px solid $primary;
+        }
+    }
+
+    .qnt__item__opt {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+
+    .qnt__opt__icon {
+        color: $textTips;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: .15s;
+
+        &:hover {
+            @include font_primary();
+        }
+    }
+
+    .qnt__category__item {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid #D3D3D3;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 12px 0 8px;
+        cursor: pointer;
+        transition: .15s;
+        margin-right: 20px;
+
+        &:hover {
+            @include border_primary();
+        }
+    }
+
+    .qnt__category__name {
+        font-size: 12px;
+        color: $textSub;
+        margin-top: 6px;
+    }
+
+    .qnt__category__icon {
+        font-size: 16px;
+        @include font_primary();
+    }
+
+    .qnt__category__title {
+        margin-bottom: 10px;
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .qnt__opt__title {
+        font-size: 20px;
+        margin-bottom: 23px;
+        padding-left: 20px;
+    }
+}

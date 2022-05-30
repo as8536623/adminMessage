@@ -1,0 +1,17 @@
+.system-container{
+    padding: 0 20px 20px;
+    .el-tabs__nav-scroll{
+        text-align: left;
+    }
+    .el-tabs__nav{
+       float: none;
+        display: inline-block;
+    }
+    .el-tabs__item{
+        height: 44px;
+        line-height: 44px;
+    }
+    .el-tabs__header{
+        margin: 0;
+    }
+}

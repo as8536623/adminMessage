@@ -1,0 +1,44 @@
+.el-radio-row {
+    padding: 11px 0;
+}
+
+.el-title-row {
+    padding: 0 20px;
+}
+
+.form__section {
+    padding: 23px 16px;
+}
+
+.open__scope__btn {
+    padding-left: 20px;
+}
+.form__section__block{
+    padding: 0;
+    .open__scope__btn{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .form__section__content{
+        background-color: #ffffff;
+        padding: 10px 20px 20px;
+    }
+    .form__section__arrow {
+        margin-bottom: 16px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    .el-form-item--small.el-form-item{
+        padding-top: 0;
+    }
+    .app__row--right{
+        padding: 20px 0;
+        .el-form .el-input--small{
+            width: 200px;
+        }
+        .search__input__wrapper{
+            padding-top: 0;
+            width: 200px !important;
+        }
+    }
+}

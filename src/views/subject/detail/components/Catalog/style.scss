@@ -1,0 +1,109 @@
+.subject-catalog {
+    .sc-sec__header {
+        height: 50px;
+        line-height: 50px;
+        background-color: #F5F6F6;
+        padding: 0 20px;
+        position: relative;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 12px;
+            width: 4px;
+            background-color: $primary;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .sc-sec__title {
+        flex: 1;
+        display: flex;
+    }
+
+    .sc-sec__title__index {
+        width: 48px;
+        flex-shrink: 0;
+    }
+
+    .sc-sec__title__name {
+        flex: 1;
+    }
+
+    .sc-sec__arrow {
+        width: 10px;
+        height: 10px;
+        color: #BDBDBD;
+        transition: .15s;
+        flex-shrink: 0;
+    }
+
+    .sc-sec__course__name {
+        display: flex;
+        padding: 0 20px;
+        height: 33px;
+        line-height: 33px;
+    }
+
+    .sc-sec__course__order {
+        width: 48px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .sc-sec__course__title {
+        flex: 1;
+    }
+
+    .sc-sec__chapter {
+        display: flex;
+        padding-left: 66px;
+        align-items: center;
+        height: 60px;
+        color: $textSub;
+        border-bottom: 1px dashed $borderColor;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .sc-sec__chapter--left {
+        width: 26px;
+    }
+
+    .sc-sec__chapter__icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.text-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 650px;
+}
+
+.sc-sec {
+    margin-bottom: 10px;
+
+    &.active {
+        border-bottom: 1px solid $borderColor;
+
+        .sc-sec__arrow {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.subject-catalog {
+    padding-top: 18px;
+}

@@ -1,0 +1,12 @@
+.cert__print {
+    padding: 5px;
+    
+    .cert__print__item {
+        text-align: center;
+    }
+
+    .cert__print__list {
+        height: 500px;
+        overflow-y: auto;
+    }
+}

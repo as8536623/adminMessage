@@ -1,0 +1,23 @@
+.veln__dynamic__group {
+    position: relative;
+    width: 100%;
+    background: #F7F7F7;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 0;
+}
+.bitchInfo {
+    text-align: center;
+    padding-top: 20px;
+}
+.chargeLevelContent {
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        padding: 0 10px;
+    }
+}

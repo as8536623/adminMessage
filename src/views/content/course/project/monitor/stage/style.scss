@@ -1,0 +1,41 @@
+.stage__detail__wrapper{
+    padding: 0 20px;
+    .stage__detail__user{
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .stage__info__item{
+            margin-right: 20px;
+        }
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .stage__user__info{
+        flex: 1;
+    }
+    .stage__detail__content{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .stage__detail__left{
+        width: 300px;
+        background-color: $bg;
+        height: fit-content;
+    }
+    .stage__item{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        cursor: pointer;
+        &.active{
+            @include bg_primary();
+            color: $white;
+        }
+    }
+    .stage__detail__right{
+        flex: 1;
+        margin-left: 20px;
+    }
+}

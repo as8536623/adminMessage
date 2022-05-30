@@ -1,0 +1,61 @@
+@mixin size($w, $h: $w) {
+    width: $w;
+    height: $h;
+}
+.u-hidden {
+    display: none;
+}
+
+// CONTAINER
+.internet {
+    display: inline-block;
+    position: relative; // To place wifi icons
+    vertical-align: middle;
+}
+
+// SVGS
+.wifi {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    &__path {
+        fill: $white;
+    }
+    &--01 {
+        fill-opacity: 0.1;
+    }
+    &--02 {
+        clip-path: circle(90% at 50% 99%);
+    }
+}
+.playing{
+    .wifi {
+        &--02 {
+            animation: connect 1.3s 0s 3000 ease-in-out;
+            //clip-path: circle(0 at 50% 99%);
+            clip-path: circle(90% at 50% 99%);
+        }
+    }
+}
+
+// ANIMATION
+@keyframes connect {
+    0% {
+        clip-path: circle(0 at 50% 99%);
+    }
+    25% {
+        clip-path: circle(20% at 50% 99%);
+    }
+    50% {
+        clip-path: circle(35% at 50% 99%);
+    }
+    75% {
+        clip-path: circle(60% at 50% 99%);
+    }
+    100% {
+        clip-path: circle(90% at 50% 99%);
+    }
+}

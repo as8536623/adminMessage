@@ -1,0 +1,76 @@
+.veln__steps {
+    margin: 0;
+    padding: 20px 0;
+
+    &.left {
+        text-align: left;
+    }
+
+    &.center {
+        text-align: center;
+    }
+
+    &.right {
+        text-align: right;
+    }
+
+    .veln__step {
+        list-style: none;
+        display: inline-block;
+        font-size: 0;
+        margin-right: 32px;
+
+        &:last-child {
+            .veln__step__item {
+                margin-right: 0;
+            }
+
+            .veln__step__point {
+                display: none;
+            }
+        }
+
+        &.done {
+            .veln__step__point {
+                @include font_primary();
+            }
+        }
+    }
+
+    .veln__step__item {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 36px;
+
+        &.disabled {
+            cursor: not-allowed
+        }
+
+        &.active {
+            .veln__step__title {
+                color: $textSub;
+            }
+        }
+    }
+
+    .veln__step__icon {
+        font-size: 28px;
+        vertical-align: middle;
+    }
+
+    .veln__step__title {
+        font-size: 14px;
+        height: 21px;
+        line-height: 21px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 8px;
+        color: $textTips;
+    }
+
+    .veln__step__point {
+        font-size: 28px;
+        vertical-align: middle;
+        color: #DDDDDD;
+    }
+}

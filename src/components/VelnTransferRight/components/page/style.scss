@@ -1,0 +1,26 @@
+.veln__transfer__page {
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+    .vtp__npt {
+        width: 42px;
+        height: 23px;
+        margin-left: 19px;
+        .el-input__inner {
+            width: 42px;
+            height: 23px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .icon__arrow {
+        cursor: pointer;
+        margin-left: 19px;
+        &:hover {
+            @include font_primary();
+        }
+    }
+    .split__line {
+        margin: 0 11px;
+    }
+}

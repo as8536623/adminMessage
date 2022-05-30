@@ -1,0 +1,88 @@
+.course-item {
+    width: 260px;
+    height: 212px;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+
+    .course-item__image {
+        width: 100%;
+        height: 102px;
+    }
+
+    .course-item__content {
+        padding: 8px;
+    }
+
+    .course-item__name {
+        font-size: 15px;
+        line-height: 21px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .course-item__line {
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+            margin-top: 4px;
+        }
+    }
+
+    .course-item__price {
+        display: flex;
+        align-items: center;
+    }
+
+    .course-item__price__current {
+        font-size: 14px;
+        color: #FF8000;
+        line-height: 20px;
+        margin-right: 14px;
+    }
+
+    .course-item__price__original {
+        font-size: 12px;
+        line-height: 20px;
+        color: $textTips;
+        text-decoration: line-through;
+    }
+
+    .course-item__count__icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+
+    .course-item__count__num {
+        font-size: 13px;
+        color: $textTips;
+        line-height: 21px;
+    }
+
+    .course-item__grade {
+        font-size: 13px;
+        color: $textTips;
+        line-height: 21px;
+        visibility: hidden;
+    }
+
+    .course-item__buy {
+        width: 64px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 32px;
+        background-color: #FF8000;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+}

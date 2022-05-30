@@ -1,0 +1,308 @@
+.face-detail-container {
+    padding: 10px 20px;
+}
+
+.sign__container__detail {
+    padding: 0 20px 20px;
+
+    .face__view__btn {
+        margin-left: 10px;
+        padding: 4px 15px;
+    }
+
+    label.el-form-item__label::before {
+        margin-right: 0;
+    }
+
+    .tool__sign__form {
+        label.el-form-item__label::before {
+            width: 0;
+        }
+
+        .el-form-item {
+            margin-right: 60px;
+        }
+    }
+
+    .sign__description {
+        p:first-child {
+            margin-top: 0;
+        }
+
+        img {
+            max-width: 300px;
+        }
+    }
+
+    .sign__edit__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 48px;
+        font-size: 14px;
+        cursor: pointer;
+        color: $btnPrimary;
+
+        &:hover, &:focus {
+            color: $btnPrimaryHover;
+        }
+    }
+
+    .veln__course__plan {
+        width: 100%;
+        //border-bottom: 1px solid $borderColor;
+        padding: 20px 0;
+
+        .veln__plan-form {
+            position: relative;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid $borderColor;
+        }
+
+        .veln__del__btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 14px;
+        }
+
+        .course__paragraph__upload {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            cursor: pointer;
+            vertical-align: top;
+
+            & + .el-form-item__error {
+                vertical-align: 7px;
+            }
+        }
+
+        .course__paragraph__file {
+            width: 300px;
+            height: 80px;
+            border: 1px solid $borderColor;
+            border-radius: 2px;
+            padding: 14px 16px 14px 25px;
+            margin: 0 10px 10px 0;
+        }
+
+        .course__file__icon {
+            float: left;
+            width: 30px;
+            height: 35px;
+            margin-right: 28px;
+            background-image: url('./images/icons.png');
+            background-image: -webkit-image-set(url('./images/icons.png') 1x, url('./images/icons@2x.png') 2x, url('./images/icons@3x.png') 3x);
+            background-size: 125px;
+            background-repeat: no-repeat;
+            margin-top: 7.5px;
+
+            &[data-type="video"] {
+                background-position: -63px -36px;
+            }
+
+            &[data-type="audio"] {
+                background-position: 0 0;
+            }
+
+            &[data-type="documents"],
+            &[data-type="word"],
+            &[data-type="docx"],
+            &[data-type="doc"] {
+                background-position: -63px 0;
+            }
+
+            &[data-type="excel"] {
+                background-position: -32px -36px;
+            }
+
+            &[data-type="ppt"],
+            &[data-type="pptx"] {
+                background-position: -95px 0;
+            }
+
+            &[data-type="pdf"] {
+                background-position: 0 -36px;
+            }
+
+            &[data-type="image"] {
+                background-position: -95px -36px;
+            }
+
+            &[data-type="unknown"],
+            &[data-type="zip"] {
+                background-position: -32px 0;
+            }
+        }
+
+        .course__paragraph--empty {
+            width: 300px;
+            height: 80px;
+            border: 1px solid $borderColor;
+            border-radius: 2px;
+            padding: 16px 0;
+            text-align: center;
+        }
+
+        .course__paragraph--empty__icon {
+            font-size: 20px;
+            color: $textSub;
+            margin-bottom: 0;
+        }
+
+        .course__paragraph--empty__text {
+            font-size: 14px;
+            line-height: 14px;
+            color: $textSub;
+        }
+
+        .course__file__name {
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 8px;
+        }
+
+        .course__file__created {
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $textTips;
+        }
+
+        .course__file__del {
+            padding: 0;
+            line-height: 20px;
+            color: $textSub;
+
+            &:hover {
+                opacity: .75;
+            }
+        }
+
+        .course__file__bottom {
+            height: 20px;
+            line-height: 20px;
+            margin-top: 4px;
+            color: $textTips;
+        }
+
+        .course__opt__icon {
+            color: #CCCCCC;
+            cursor: pointer;
+            margin-left: 10px;
+
+            &:hover {
+                opacity: .75;
+            }
+        }
+    }
+
+    .el-tag {
+        margin: 0 10px 10px 0;
+    }
+}
+
+.tool-participants {
+    .sign__label-item .el-form-item__label {
+        line-height: 40px;
+    }
+
+    .el-tabs__nav-wrap {
+        width: 99%;
+    }
+}
+
+// 互动现场
+.interaction__detail__container {
+    .interaction__content {
+        margin-top: 20px;
+
+        .interaction__item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .interaction {
+            border: 1px solid $borderColor;
+            border-radius: 2px;
+            height: 60px;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 14px;
+            color: $textPrimary;
+        }
+
+        .activity {
+            width: 188px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .tool__icon {
+            font-size: 36px;
+            margin-right: 10px;
+        }
+
+        .name {
+            width: 20%;
+        }
+
+        .time {
+            width: 30%;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .have {
+            @include font_primary();
+        }
+
+        .no {
+            color: $error;
+        }
+
+        .view {
+            margin-left: 20px;
+        }
+
+        .btn__item {
+            margin-left: 30px;
+            color: $textSub;
+            cursor: pointer;
+        }
+
+        .gold {
+            text-align: right;
+            width: 230px;
+            font-size: 14px;
+            color: $textSub;
+        }
+
+        .el-input--small {
+            width: 90px;
+        }
+    }
+}
+
+.text-hide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+

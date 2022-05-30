@@ -1,0 +1,178 @@
+.app__row--left,
+.app__row--right {
+    padding: 20px 10px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.role__header {
+    margin-bottom: 20px;
+}
+
+.role__name,
+.auth__opt {
+    display: inline-block;
+}
+
+.auth__opt {
+    margin-left: 20px;
+}
+
+.role__name__edit {
+    color: #666666;
+}
+
+.add__role__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.course__type__select {
+    width: 240px;
+}
+.manage-container{
+    //padding: 12px 20px;
+    .el-form .el-input--small{
+        width: 240px;
+    }
+    .el-form-item--small.el-form-item{
+        margin-bottom: 10px;
+    }
+}
+
+.sync__select {
+    width: 100%;
+    padding: 50px;
+
+    /deep/ .el-select {
+        margin-right: 10px;
+    }
+}
+
+.sync_dialog-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-main__content{
+    padding-left: 10px;
+    padding-right: 20px;
+    height: 390px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &-questions {
+        height: 440px;
+    }
+    .course__teacher__btn {
+        height: 32px;
+        padding: 0 5px;
+        min-width: 65px;
+    }
+
+    .course__teacher__tag {
+        height: 32px;
+        line-height: 30px;
+        border-radius: 2px;
+        margin-right: 10px;
+        margin-bottom: 6px;
+    }
+    /deep/ .el-textarea {
+        width: 446px;
+        height: 170px;
+        padding: 2px 2px 2px 2px;
+        font-size: 14px;
+        color: #000;
+        box-sizing: border-box;
+        .el-textarea__inner {
+            width: 100%;
+            height: 100%;
+            resize: none;
+        }
+    }
+    .course__exam__item {
+        margin-top: 2%;
+        height: 390px;
+        /deep/ .el-table-wrap {
+            height: 370px;
+        }
+    }
+    &--item-details {
+        /deep/ label {
+            text-align: right;
+        }
+    }
+}
+
+.dlg__content {
+    padding: 20px;
+}
+
+
+.teacher__search {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-right: 6px;
+}
+
+.course__accessory.demo__course__accessory {
+    .course__paragraph__upload {
+        margin-left: 0;
+    }
+}
+
+.dialog__btn__line {
+    text-align: center;
+}
+
+.app__row--right__search-box {
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search-box__left {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-bottom: 18px;
+        .search-box__left__input-box {
+            position: relative;
+            width: 262px;
+            height: 32px;
+            margin-left: 20px;
+            /deep/ .el-input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                input {
+                    padding: 0 26px 0 40px;
+                    box-sizing: border-box;
+                }
+            }
+            .input-box__search-icon {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -10px;
+                width: 20px;
+                height: 20px;
+                z-index: 2;
+            }
+            .input-box__clear {
+                position: absolute;
+                top: 50%;
+                width: 16px;
+                height: 16px;
+                right: 6px;
+                z-index: 3;
+                margin-top: -8px;
+            }
+        }
+    }
+
+}

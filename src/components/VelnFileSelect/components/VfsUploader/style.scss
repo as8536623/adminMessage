@@ -1,0 +1,15 @@
+.vfs__upload__wrapper {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    z-index: 10;
+    .webuploader-element-invisible {
+        display: none;
+    }
+    .webuploader-pick + div {
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

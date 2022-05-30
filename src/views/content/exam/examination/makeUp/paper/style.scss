@@ -1,0 +1,82 @@
+.paper__setting__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    .paper__setting__name {
+        flex: 1;
+    }
+    .paper__button {
+        @include font_primary();
+        margin-left: 10px;
+    }
+    .el-input--small {
+        width: 60px;
+    }
+    .el-input-number--small {
+        width: 60px;
+    }
+}
+
+.paper__setting__default {
+    cursor: pointer;
+    width: 300px;
+    height: 206px;
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.paper__default__image {
+    width: 140px;
+    height: 106px;
+    background-image: url("./images/default.png");
+    background-image: image-set(url("./images/default.png") 1x, url("./images/default@2x.png") 2x);
+    background-image: -webkit-image-set(url("./images/default.png") 1x, url("./images/default@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.paper__default__desc {
+    margin-top: 10px;
+    color: $textTips;
+}
+
+.loading__dialog {
+    .el-dialog__header {
+        border-bottom: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .loading__content {
+        padding: 20px;
+    }
+    .loading__image {
+        width: 164px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+    .loading {
+        background-image: url("./images/transition.png");
+        background-image: image-set(url("./images/transition.png") 1x, url("./images/transition@2x.png") 2x);
+        background-image: -webkit-image-set(url("./images/transition.png") 1x, url("./images/transition@2x.png") 2x);
+    }
+    .finish {
+        width: 191px;
+        height: 188px;
+        background-image: url("./images/finish.png");
+        background-image: image-set(url("./images/finish.png") 1x, url("./images/finish@2x.png") 2x);
+        background-image: -webkit-image-set(url("./images/finish.png") 1x, url("./images/finish@2x.png") 2x);
+    }
+    .loading__tip {
+        font-size: 14px;
+        @include font_primary();
+        margin-top: 20px;
+        text-align: center;
+    }
+}

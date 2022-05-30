@@ -1,0 +1,42 @@
+.app-key-content {
+    line-height: 20px;
+}
+
+.customerNameOption{
+    display: inline-block;
+}
+.standardInput {
+    height: 40px;
+    margin: 0 8px;
+    width: 20%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+.enterpriseNameOption {
+    display: inline-block;
+    margin-right: 10px;
+}
+.rechargeBox {
+    display: inline-block;
+    margin: 0 20px;
+    .totalAmount,.currentAmount{
+        display: inline-block;
+        margin-right: 20px;
+        span{
+            font-size: 16px;
+            vertical-align: middle;
+            &.black{
+                font-size: 20px;
+                color: #333;
+            }
+            &.red{
+                font-size: 20px;
+                color: red;
+            }
+        }
+    }
+}
+.btn {
+    margin-right: 20px;
+}

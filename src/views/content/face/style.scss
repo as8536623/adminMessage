@@ -1,0 +1,420 @@
+.face-container {
+    padding: 20px;
+
+    .sign__stu__desc {
+        line-height: 32px;
+        color: $textSub;
+    }
+
+    //.el-range-editor--small.el-input__inner {
+    //    width: 340px;
+    //}
+    .el-form-item__label{
+        &:before{
+            width: 0;
+            content: none;
+        }
+    }
+    .custom__btn{
+        margin-left: 40px;
+    }
+    .el-form-item:last-child{
+        margin-right: 0;
+    }
+}
+
+// 编辑页面
+.face-edit-container {
+    padding: 0 20px 20px;
+
+    .form__section div.form__section__title {
+        height: 48px;
+        line-height: 48px;
+    }
+    .el-form-item--small:first-child {
+        .el-form-item__label {
+            line-height: 40px;
+        }
+    }
+
+    .course__upload__line {
+        .el-form-item__content {
+            overflow: hidden;
+            height: 169px;
+        }
+    }
+
+    .tool-form-item {
+        margin-top: 20px;
+    }
+
+    .tool-custom-list {
+        margin: 10px 0;
+
+        .el-form-item__label {
+            text-align: left;
+        }
+
+        .el-form .el-input--small {
+            width: 185px;
+        }
+
+        .svg-icon {
+            vertical-align: baseline;
+        }
+    }
+
+    .tool__tip {
+        font-size: 13px;
+        color: $textTips;
+    }
+
+    .tool__sign__form {
+        label.el-form-item__label::before {
+            width: 0;
+        }
+    }
+
+    .plan__add__btn{
+        margin-top: 20px;
+    }
+    .plan__btn__list{
+        margin-top: 20px;
+    }
+    .sign__up__set{
+        color: $textSub;
+    }
+    .face__btn{
+        margin: 0 10px;
+    }
+    .el-tag{
+        margin: 0 10px 10px 0;
+    }
+}
+
+.tool-participants {
+    .el-form-item--small:first-child {
+        .el-form-item__label {
+            line-height: 40px;
+        }
+    }
+}
+
+.homework__radio__group {
+    .el-radio {
+        display: block;
+        line-height: 32px;
+    }
+}
+
+.homework__tips {
+    color: #999999;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.homework__link {
+
+    .el-icon-view,
+    .el-icon-delete {
+        font-size: 16px;
+        margin-left: 10px;
+        cursor: pointer;
+        @include font_primary();
+    }
+}
+
+// 二维码
+.qrCode__dialog {
+    .dialog__form__container {
+        padding: 12px 25px 0 45px;
+        height: 588px;
+        box-sizing: border-box;
+    }
+
+    .qrCode__content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 490px;
+    }
+
+    .qrCode__pic {
+        width: 354px;
+        height: 100%;
+        margin-right: 25px;
+    }
+
+    .qrCode {
+        width: 84px;
+        height: 84px;
+    }
+
+    .input-with-select {
+        width: 266px;
+        margin-right: 10px;
+    }
+
+    .el-button.el-button--small {
+        padding: 7px 10px;
+    }
+
+    .el-input .el-input__inner {
+        border-radius: 0;
+        border: 1px solid $qrBorderColor;
+    }
+
+    .el-input__inner:hover,
+    .el-input__inner:focus {
+        border: 1px solid $btnPrimary;
+    }
+
+    .address {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .el-input-group__append {
+        cursor: pointer;
+        padding: 0 18px;
+        border: 1px solid $qrBorderColor;
+        border-radius: 0px;
+        color: $textPrimary;
+        border-left: none;
+
+        &:hover {
+            color: $btnPrimaryHover;
+        }
+    }
+}
+
+
+// 互动现场
+.interaction__container{
+    display: flex;
+    .form__section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .form__section__container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction__content{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        margin-top: 20px;
+    }
+    .interaction__left{
+        width: 185px;
+        border-right: 1px solid $borderColor;
+        flex-shrink: 0;
+        .interaction__item{
+            height: 60px;
+            width: 162px;
+            padding: 6px 0;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .interaction{
+            position: relative;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: $textPrimary;
+            padding: 0 14px;
+            cursor: pointer;
+            &:hover{
+                background: $interBg;
+            }
+        }
+        .active:before{
+            top: 3px;
+            left: 46px;
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: $red;
+        }
+        .tool__icon{
+            font-size: 36px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .add__icon{
+            font-size: 24px;
+            margin-left: 24px;
+        }
+    }
+    .interaction__right{
+        flex: 1;
+        padding: 0 23.5px;
+        box-sizing: border-box;
+        .interaction__item{
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .interaction{
+            border: 1px solid $borderColor;
+            border-radius: 2px;
+            height: 60px;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 14px;
+            color: $textPrimary;
+        }
+        .activity{
+            width: 188px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .tool__icon{
+            font-size: 36px;
+            margin-right: 10px;
+        }
+        .name{
+            width: 20%;
+            flex-shrink: 0;
+        }
+        .time{
+            width: 30%;
+        }
+        .btn{
+            flex: 1;
+            text-align: right;
+           white-space: nowrap;
+        }
+        .have{
+            @include font_primary();
+        }
+        .no{
+            color: $error;
+        }
+        .view{
+            margin-left: 20px;
+        }
+        .btn__item{
+            margin-left: 30px;
+            color: $textSub;
+            cursor: pointer;
+            &:hover, &:focus{
+                color: $btnPrimaryHover;
+            }
+        }
+        .gold{
+            text-align: right;
+            width: 200px;
+            font-size: 14px;
+            color: $textSub;
+            .el-form-item--small{
+                margin-bottom: 0;
+            }
+        }
+        .el-input--small{
+            width: 90px;
+        }
+        .interaction__btn{
+            text-align: center;
+        }
+    }
+}
+
+.text-hide{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.qrCode__dialog .qrCode__dlg__wrapper {
+    padding: 20px;
+
+    .qrCode__content {
+        .qrCode {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .input-with-select {
+        width: 300px;
+        margin-right: 10px;
+    }
+}
+
+// 二维码
+.qrCode__dialog {
+    .dialog__form__container {
+        padding: 12px 25px 0 45px;
+        height: 588px;
+        box-sizing: border-box;
+    }
+
+    .qrCode__content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 300px;
+    }
+
+    .qrCode__pic {
+        width: 354px;
+        height: 100%;
+        margin-right: 25px;
+    }
+
+    .qrCode {
+        width: 84px;
+        height: 84px;
+    }
+
+    .input-with-select {
+        width: 266px;
+        margin-right: 10px;
+    }
+
+    .el-button.el-button--small {
+        padding: 7px 10px;
+    }
+
+    .el-input .el-input__inner {
+        border-radius: 0;
+        border: 1px solid $qrBorderColor;
+    }
+
+    .el-input__inner:hover,
+    .el-input__inner:focus {
+        border: 1px solid $btnPrimary;
+    }
+
+    .address {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .el-input-group__append {
+        cursor: pointer;
+        padding: 0 18px;
+        border: 1px solid $qrBorderColor;
+        border-radius: 0px;
+        color: $textPrimary;
+        border-left: none;
+
+        &:hover {
+            color: $btnPrimaryHover;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.form__section {
+    position: relative;
+
+    .form__section__title {
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid $borderColor;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        &.expand {
+            cursor: pointer;
+        }
+    }
+
+    .form__section__arrow {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        color: #999999;
+        transition: all .23s;
+        &.collapse {
+            transform: rotate(180deg);
+        }
+    }
+
+    .form__section__container {
+        padding-top: 2px;
+        height: auto;
+        transition: all .23s;
+        overflow: hidden;
+        &.collapse {
+            height: 0;
+        }
+    }
+}

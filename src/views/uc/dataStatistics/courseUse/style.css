@@ -1,0 +1,15 @@
+.app-key-content {
+  line-height: 20px; }
+
+.standardInput {
+  height: 40px;
+  margin: 0 8px;
+  width: 20%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-indent: 5px; }
+
+.timeBox {
+  display: inline-block; }
+  .timeBox span {
+    padding-right: 10px; }

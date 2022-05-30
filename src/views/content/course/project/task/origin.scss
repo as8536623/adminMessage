@@ -1,0 +1,28 @@
+.project__task {
+    .form__section.task__sec {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .form__section__title {
+            margin-bottom: 0;
+        }
+
+        .form__section__container {
+            padding-top: 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .none__label__fi {
+        &.datetime {
+            margin-left: 20px;
+        }
+
+        .el-form-item__content {
+            margin-left: 0 !important;
+        }
+    }
+}

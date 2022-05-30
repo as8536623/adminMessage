@@ -1,0 +1,20 @@
+.veln__dgp__select {
+    width: 100%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    display: inline-block;
+    &.outer {
+        border-top: 1px solid $borderColor;
+        .btn__wrapper {
+            display: none;
+        }
+    }
+}
+.formBox {
+    width: 400px;
+    margin: 0 auto;
+    .el-form-item {
+        width: 400px;
+        display: inline-block;
+    }
+}

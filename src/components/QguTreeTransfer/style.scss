@@ -1,0 +1,16 @@
+.qtt__tree__filter {
+    margin-bottom: 10px;
+}
+
+.qtt__tree {
+    height: 330px;
+    overflow-y: auto;
+    &.has__title {
+        height: 360px;
+    }
+}
+
+.qtt__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

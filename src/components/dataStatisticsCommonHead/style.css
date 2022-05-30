@@ -1,0 +1,50 @@
+.stu__info__setting .headerBox {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block; }
+  .stu__info__setting .headerBox ul {
+    overflow: hidden;
+    padding-left: 0;
+    margin-top: 0; }
+    .stu__info__setting .headerBox ul li {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      float: left;
+      width: 280px;
+      height: 120px;
+      margin-right: 20px;
+      margin-bottom: 30px; }
+      .stu__info__setting .headerBox ul li.bg0 {
+        background: url("./assets/images/bg0.png") no-repeat center center;
+        background-size: 100% 100%; }
+      .stu__info__setting .headerBox ul li.bg1 {
+        background: url("./assets/images/bg1.png") no-repeat center center;
+        background-size: 100% 100%; }
+      .stu__info__setting .headerBox ul li.bg2 {
+        background: url("./assets/images/bg2.png") no-repeat center center;
+        background-size: 100% 100%; }
+      .stu__info__setting .headerBox ul li.bg3 {
+        background: url("./assets/images/bg3.png") no-repeat center center;
+        background-size: 100% 100%; }
+      .stu__info__setting .headerBox ul li.bg4 {
+        background: url("./assets/images/bg4.png") no-repeat center center;
+        background-size: 100% 100%; }
+      .stu__info__setting .headerBox ul li .contentBox {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        color: #fff; }
+        .stu__info__setting .headerBox ul li .contentBox .title {
+          font-size: 14px;
+          margin-bottom: 20px; }
+        .stu__info__setting .headerBox ul li .contentBox .data {
+          font-size: 16px;
+          width: 100%;
+          overflow: hidden;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2; }
+          .stu__info__setting .headerBox ul li .contentBox .data .el-select {
+            width: 100%; }

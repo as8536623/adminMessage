@@ -1,0 +1,43 @@
+body .el-form .search__input__wrapper .el-input--small {
+    width: 100%;
+}
+
+.search__input__wrapper {
+    position: relative;
+
+    &:hover {
+        .search__clear {
+            display: block;
+        }
+    }
+    .el-input .el-input__inner {
+        padding-right: 36px;
+    }
+
+    .search__icon {
+        color: $searchBtnColor;
+        position: absolute;
+        right: 14px;
+        font-size: 16px;
+        top: 9px;
+        cursor: pointer;
+        line-height: 16px;
+    }
+
+    .search__clear {
+        color: $searchBtnColor;
+        background-color: $white;
+        position: absolute;
+        right: 34px;
+        font-size: 16px;
+        top: 9px;
+        cursor: pointer;
+        line-height: 16px;
+        transition: .15s;
+        display: none;
+
+        &:hover {
+            @include font_primary();
+        }
+    }
+}

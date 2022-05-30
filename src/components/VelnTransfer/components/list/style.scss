@@ -1,0 +1,36 @@
+.veln__transfer__list {
+    height: 360px;
+    .el-checkbox-button__inner, .el-checkbox__label{
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+}
+
+.veln__transfer__item {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 6px;
+    border-bottom: 1px dashed $borderColor;
+
+    &:hover {
+        background-color: $btnDisabledActiveBg;
+    }
+
+    label {
+        width: 100%;
+    }
+}
+
+.veln__transfer__item--empty {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 6px;
+    border-bottom: 1px dashed $borderColor;
+    text-align: center;
+    color: #999999;
+}
+

@@ -1,0 +1,58 @@
+.question__outer {
+    height: 100%;
+}
+
+.question__block {
+    .el-form .el-input--small {
+        width: 240px;
+    }
+
+    .search__input.el-input--small {
+        width: 300px;
+    }
+}
+
+.item__excel__info {
+    margin-bottom: 10px;
+    width: 99%;
+    font-size: 12px;
+}
+
+.error__template__link {
+    padding: 20px;
+}
+
+.person__excel__link {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.question__category__icon {
+    position: absolute;
+    top: 73px;
+    right: 12px;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 4px;
+    font-size: 14px;
+    @include bg_primary();
+    border-radius: 2px;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.knowledge__point__btn {
+    margin-left: 10px;
+}
+
+.question__tree.qgu__tree {
+    .include__child {
+        right: 45px;
+    }
+}
+
+.question-filter {
+    margin-bottom: 10px;
+}

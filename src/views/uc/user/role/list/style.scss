@@ -1,0 +1,173 @@
+.role__list {
+    .role__list__header {
+        height: 46px;
+        line-height: 46px;
+        font-size: 16px;
+        color: $textPrimary;
+        font-weight: bold;
+        padding-left: 20px;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    .role__list__main {
+        margin: 0;
+        padding: 29px 0 0 20px;
+        overflow: hidden;
+    }
+
+    .role__item {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 29px;
+        width: 280px;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 20px 12px;
+        background: url('./images/student_bg.png') transparent center center no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &:hover {
+            .role__item--delete {
+                display: inline-block;
+            }
+        }
+
+        &.manage {
+            background-image: url('./images/manage_bg.png');
+
+            .role__item__icon {
+                background-image: url('./images/manage.png');
+            }
+        }
+    }
+
+    .role__item__icon {
+        height: 80px;
+        width: 68px;
+        background: url('./images/student.png') transparent center center no-repeat;
+        background-size: contain;
+        margin-right: 16px;
+    }
+
+    .role__manager {
+        font-size: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .role__item__info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .role__name {
+        flex: 1;
+    }
+
+    .role__opt {
+        margin-top: 10px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 0;
+    }
+
+    .role__opt__line {
+        margin: 0 4px;
+        position: relative;
+        width: 1px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: -5px;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 14px;
+            width: 1px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 50%;
+            margin-top: -7px;
+        }
+
+        &.normal {
+            margin: 0 20px;
+        }
+    }
+
+    .role__opt__user,
+    .role__opt__auth {
+        font-size: 14px;
+        color: #ffffff;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    .role__opt__user {
+        font-size: 0;
+    }
+
+    .role__opt__user__text,
+    .role__opt__user__num {
+        font-size: 14px;
+    }
+
+    .role__name__text {
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    .role__name__edit {
+        font-size: 14px;
+        color: #ffffff;
+        opacity: .4;
+        cursor: pointer;
+        transition: .1s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .role__list__add {
+        width: 280px;
+        height: 120px;
+        float: left;
+        margin-right: 20px;
+        list-style: none;
+        border: 1px dashed #CCCCCC;
+        line-height: 118px;
+        text-align: center;
+        color: $textSub;
+        cursor: pointer;
+        transition: .25s;
+
+        &:hover {
+            @include border_primary();
+            @include font_primary();
+        }
+    }
+
+    .role__item--delete {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #ffffff;
+        &:hover {
+            opacity: 75;
+        }
+    }
+}

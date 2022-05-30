@@ -1,0 +1,38 @@
+.open__course__wrapper{
+    .open__course--bottom {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .course__detail {
+        flex: 1;
+        margin-right: 30px;
+        overflow: hidden;
+    }
+
+    .course__relative {
+        width: 380px;
+        margin-top: 43px;
+    }
+}
+
+.open__course__bg {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 40px;
+    background: #ffffff;
+
+    .open__course__title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+.course-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    overflow: auto;
+}

@@ -1,0 +1,21 @@
+.jurisdiction {
+    width: 99%;
+    overflow: hidden;
+    .jurisdiction-form-item{
+        position: relative;
+        .el-input--small{
+            width: 240px;
+            height: 32px;
+            line-height: 32px;
+        }
+        .jurisdiction__icon{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            color: #999999;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
